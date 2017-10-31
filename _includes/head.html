@@ -1,0 +1,23 @@
+{% include base.html %}
+<head>
+  {% if page.title %}
+    {% capture title %}{{ page.title }} - {{site.title}}{% endcapture %}
+  {% elsif page.content %}
+    {% capture title %}{{ page.excerpt | strip_html | truncate: 50, '…'}}{{site.title}}{% endcapture %}
+  {% endif %}
+  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="{{"/assets/img/favicon.png" | relative_url}}">
+  
+  <meta name="description" content="{{site.description}}">
+  <meta name="keywords" content="{{site.keywords}}">
+  <meta name="author" content="{{site.author}}">
+  
+  <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/pure-min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/grids-responsive-min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+</head>

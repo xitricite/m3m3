@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Meme"
+date:   2017-10-30 06:55:36 +0000
+categories: blog
+---
+
+#=> prints 'Hi, Tom' to STDOUT.
