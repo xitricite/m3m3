@@ -1,50 +1,56 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
-    <!--<h2 class="footer-heading">{{ site.title | escape }}</h2>-->
-
     <div class="pure-g">
-      <div class="pure-u-1 pure-u-md-1-3">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
 
-      <div class="pure-u-1 pure-u-md-1-3">
-        <ul class="social-media-list">
-          <li>
-            <span class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
-          </li>
-          
+      <div class="pure-u-1 pure-u-md-3-4">
+        <ul class="flat-list fa-2x">
+
+          {% if site.email %}
+            <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
+          {% endif %}
+
+          <li><span class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-rss"></i></a></span></li>
+
           {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+          <li><a href="https://github.com/{{ site.github_username }}"><span class="fa fa-github"></span></a></li>
+          {% endif %}
+
+          {% if site.youtube_username %}
+          <li><a href="https://www.youtube.com/channel/{{ site.youtube_username }}"><span class="fa fa-youtube-play"></span></a></li>
+          {% endif %}
+
+          {% if site.instagram_username %}
+          <li><a href="https://twitter.com/{{ site.twitter_username }}"><span class="fa fa-instagram"></span></a></li>
           {% endif %}
 
           {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+          <li><a href="https://twitter.com/{{ site.instagram_username }}"><span class="fa fa-twitter"></span></a></li>
           {% endif %}
-        </ul>
+
+          {% if site.tumblr_username %}
+          <li><a href="https://tumblr.com/{{ site.tumblr_username }}"><span class="fa fa-tumblr"></span></a></li>
+          {% endif %}
+          </ul>
+        <p>Made with &#9829* by {{ site.author | escape }} © 2017<br>
+        <small>*Jekyll, and no JQuery</small><br>
+          {{ site.description | escape }}</p>
       </div>
 
-      <div class="pure-u-1 pure-u-md-1-3">
-        <p>{{ site.description | escape }}</p>
+      <div class="pure-u-1 pure-u-md-1-4" style="position: relative;">
+        <img src="{{"/assets/img/0main/croc.png" | relative_url}}" alt="Crocodile Or Aligator?" style="position: absolute; bottom: 0; right: 0; max-width: 50vw;">
       </div>
+
     </div>
-
   </div>
-
 </footer>
+
+{% if layout.javascript %}
+  {% for script in layout.javascript %}
+    <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+{% if page.javascript %}
+  {% for script in page.javascript %}
+    <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

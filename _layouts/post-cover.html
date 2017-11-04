@@ -1,0 +1,88 @@
+---
+css: wa-mediabox.min.css
+javascript: wa-mediabox.min.js
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+
+      <header class="post-header post-cover"{% if page.featured-img %}
+		{% if page.featured-img contains 'http' %}
+			style="background-image: url('{{ page.featured-img }}');"
+			{% else %}
+			style="background-image: url('{{ page.featured-img | prepend: '/assets/img/' | relative_url}}');"
+		{% endif %}
+		{% endif %}>>
+        <div class="wrapper">
+          <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
+          <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <span class="fa fa-clock-o"></span> {{ page.date | date: date_format }}
+            </time>
+            
+            {% if page.author %}
+              <span class="fa fa-user"></span> Written by: {{ page.author }}
+            {% endif %}
+        
+            {% if page.tags %}
+              <span class="fa fa-tags"></span>
+              <ul class="listed">
+                {% for item in page.tags %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
+      </header>
+      
+      <div class="post-content wrapper" itemprop="articleBody">
+      
+      {{ content }}
+      
+      <section class="photos photoGrid">
+      {% if page.image %}
+        {% for image in page.image %}
+          <div>
+            <figure>
+              <a href="{{ page.image[forloop.index0] }}" data-mediabox="my-gallery-name" data-title="{{page.image-alt[forloop.index0]}}">
+                {% if page.image contains 'http' %}
+                <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{page.image-alt[forloop.index0]}}">
+                {% else %}
+                <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{page.image-alt[forloop.index0]}}">
+                </a> 
+              {% endif %}
+          </figure>
+          <figcaption>{{page.image-caption[forloop.index0]}}</figcaption>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if page.embeded-url %}
+        {% for embed in page.embeded-url %} 
+          <div>
+            <div class="videoWrapper">
+              <iframe src="{{ page.embeded-url[forloop.index0] }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+      </section>
+
+      </div>      
+
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

@@ -1,0 +1,41 @@
+---
+layout: post-cover
+title:  "Engineers Without Borders"
+date:   2017-10-30 09:00:00 +0800
+categories: portfolio
+tags:
+  - Club
+  - Graphic Design
+  - Illustrator
+featured-img: ewb/ewb_thumb.png
+
+image:
+  - ewb/soiree.jpg
+  - ewb/ewb agm 2017.png
+  - ewb/ewb movie night.png
+  - ewb/2017 BBQ 2.png
+  - ewb/ewb rock climbing.png
+
+image-thumb:
+  - ewb/soiree.jpg
+  - ewb/ewb agm 2017.png
+  - ewb/ewb movie night.png
+  - ewb/2017 BBQ 2.png
+  - ewb/ewb rock climbing.png
+
+image-alt:
+  - soiree.jpg
+  - ewb/ewb agm 2017.png
+  - ewb/ewb movie night.png
+  - ewb/2017 BBQ 2.png
+  - ewb/ewb rock climbing.png
+
+image-caption:
+  - Soiree.jpg
+  - ewb/ewb agm 2017.png
+  - ewb/ewb movie night.png
+  - ewb/2017 BBQ 2.png
+  - ewb/ewb rock climbing.png
+---
+
+Posters for the club.

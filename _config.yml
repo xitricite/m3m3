@@ -18,15 +18,17 @@ author: Casey Lim
 keywords: HTML,CSS,XML,JavaScript
 email: casey.x.lim@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Mememachine
+  Welcome! My hobbies include 🎨 making stuff, 📸 looking at stuff, 🎥. and recording stuff. This is my personal blog and folio. :)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username:  xitricite
 tumblr_username:  xitricite
 twitter_username: xitricite
 github_username:  xitricite
+youtube_username: UCEaHE6GHVPDvB5os4VMXsgg
 
-
+reel_video_thumb: https://img.youtube.com/vi/CYktJ75Q_Uw/maxresdefault.jpg
+reel_video_url: https://www.youtube.com/embed/CYktJ75Q_Uw
 
 # Build settings
 markdown: kramdown

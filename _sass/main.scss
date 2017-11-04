@@ -4,33 +4,41 @@
 // Define defaults for each variable.
 
 $base-font-family: "Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
+$base-font-size: 16px !default;
+$base-font-weight: 600 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
+$border-radius: 2px;
 
 $side-font-family: 'Roboto Slab', serif;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
+$min-width: 20vw;
+$transition: all 0.3s ease-out;
 
-$text-color:       rgb(15, 26, 43) !default;
-$background-color: #fff8f5 !default;
-$background-img: url('/assets/img/background.png');
-$footer-img: url('/assets/img/beach_.svg');
+$text-color: rgb(15, 26, 43) !default;
+$background-color: rgb(0, 186, 188) !default;
+$brand-color: rgb(0, 186, 188) !default;
+$brand-color-dark: darken($brand-color, 25%) !default;
+$side-color: rgb(249, 171, 133) !default;
+$side-color-light: lighten($side-color, 20%) !default;
 
-$brand-color:      rgb(0, 186, 188) !default;
+$shadow-text: 1px 1px 1px $text-color;
 
-$grey-color:       rgb(249, 171, 133) !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$background-img: url('/assets/img/0main/background.png');
+$sand-img: url('/assets/img/0main/beach_1.svg');
+$footer-img: url('/assets/img/0main/beach_.svg');
+$mask-img: url('/assets/img/0main/wave_.svg');
+$hero-img: url('/assets/img/0main/cat.png');
+$default-img: url('/assets/img/0main/placeholder.png');
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width: 90vw !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -43,10 +51,6 @@ $on-laptop:        800px !default;
   @media screen and (max-width: $device) {
     @content;
   }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
 }
 
 // Import partials.

@@ -1,17 +1,18 @@
-var carousel = new Carousel({
-    elem: 'carousel', // id of the carousel container
-    autoplay: true, // starts the rotation automatically
-    infinite: true, // enables infinite mode
-    interval: 5000, // interval between slide changes
-    initial: 0, // slide to start with
-    dots: true, // show navigation dots
-    arrows: true, // show navigation arrows
-    buttons: false,
-    btnStopText: 'Pause'
-});
+(function() {
+	// Call yo self
+	// https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t
 
-// Show the 3rd slide (Numeration of slides starts at 0)
-carousel.show(2);
+	// Carousel
+	var swiper = new Swiper('.swiper-container', {
+		// direction: 'vertical',effect: 'fade',
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
 
-// Move to the next slide
-carousel.next();
+})();

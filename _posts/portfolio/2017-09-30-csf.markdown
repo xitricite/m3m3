@@ -1,0 +1,34 @@
+---
+layout: post-cover
+title:  "Child Safety Foundation"
+date:   2017-11-02 09:00:00 +0800
+categories: portfolio
+tags:
+  - Uni Project
+  - Unity
+  - Augmented Reality
+  - Group Project
+
+featured-img: csf/title.png
+
+image:
+  - csf/title.png
+  - csf/csf_thumb.png
+
+image-thumb:
+  - csf/title.png
+  - csf/csf_thumb.png
+
+image-alt:
+  - alt
+  - 
+
+image-caption:
+  - alt
+  - 
+
+embeded-url: https://www.youtube.com/embed/ql8dUW_6VgE
+
+---
+
+Work in progress!

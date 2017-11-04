@@ -1,0 +1,74 @@
+---
+layout: post-cover
+title:  "Merdeka Month"
+date:   2017-09-30 09:00:00 +0800
+categories: portfolio
+tags:
+  - Club
+  - Photoshop
+  - Illustrator
+  - After Effects
+
+featured-img: mm/mm_flag.png
+
+image:
+  - mm/mm-style-guide.png
+  - mm/mm-style-guide-w.png
+  - mm/mm_banner.png
+  - mm/mm_certs.png
+  - mm/mm_facebook_frame.png
+  - mm/mm_icon.png
+  - mm/mm_mock_lanyard.png
+  - mm/mm_posters.png
+  - mm/mm_posts_thank.png
+  - mm/mm_SEA_posts.png
+  - mm/mm_WAL_posts.png
+  - mm/mm_shirts.png
+
+image-thumb:
+  - mm/mm-style-guide.png
+  - mm/mm-style-guide-w.png
+  - mm/mm_banner.png
+  - mm/mm_certs.png
+  - mm/mm_facebook_frame.png
+  - mm/mm_icon.png
+  - mm/mm_mock_lanyard.png
+  - mm/mm_posters.png
+  - mm/mm_posts_thank.png
+  - mm/mm_SEA_posts.png
+  - mm/mm_WAL_posts.png
+  - mm/mm_shirts.png
+
+image-alt:
+  - Merdeka Month Style Guide
+  - Merdeka Month Style Guide Walympic
+  - Merdeka Month Banner
+  - Merdeka Month Certifates
+  - Facebook Frame
+  - Logo Icon
+  - Mockup, Lanyards
+  - Posters
+  - FB Posts, Gratitude 
+  - FB Posts, SEAMposium Panelists
+  - FB Posts, WAlympic
+  - Shirt designs
+
+image-caption:
+  - Merdeka Month Style Guide
+  - Merdeka Month Style Guide Walympic
+  - Merdeka Month Banner
+  - Merdeka Month Certifates
+  - Facebook Frame
+  - Logo Icon
+  - Mockup, Lanyards
+  - Posters
+  - FB Posts, Gratitude 
+  - FB Posts, SEAMposium Panelists
+  - FB Posts, WAlympic
+  - Shirt designs, only a few were printed
+
+embeded-url:
+  - https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FWAMM2017%2Fvideos%2F684303045092424%2F&show_text=0
+
+---
+

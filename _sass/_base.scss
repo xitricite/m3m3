@@ -22,27 +22,38 @@ ul, ol, dl, figure,
 /**
  * Basic styling
  */
-body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+html {
   background-color: $background-color;
   background-image: $background-img;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+  background-image: $background-img, linear-gradient(to bottom, rgba(0, 186, 188, 1) 0%, rgba(132, 128, 123, 1) 100%);
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $side-font-family;
+  body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-image: $sand-img;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: top center;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+       -moz-font-feature-settings: "kern" 1;
+         -o-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .pure-g [class*=pure-u] {
+    font-family: $base-font-family
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $side-font-family;
+  }
 }
-
 
 
 /**
@@ -91,25 +102,40 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+h1 {
+  font-size: 1.8em;
+  }
 
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
 
 /**
  * Links
  */
 a {
-  color: $brand-color;
+  color: $side-color;
   text-decoration: none;
+  transition: $transition;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($side-color, 15%);
   }
 
   &:hover {
-    color: $text-color;
+    color: $brand-color;
     text-decoration: underline;
   }
 
-  .social-media-list &:hover {
+  .flat-list &:hover {
     text-decoration: none;
 
     .username {
@@ -123,10 +149,10 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $side-color;
+  border-left: 4px solid $side-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  font-size: 1.125em;
   letter-spacing: -1px;
   font-style: italic;
 
@@ -142,8 +168,8 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  font-size: 0.9375em;
+  border: 1px solid $side-color-light;
   border-radius: 3px;
   background-color: #eef;
 }
@@ -206,17 +232,13 @@ pre {
   vertical-align: middle;
 
   path {
-    fill: $grey-color;
+    fill: $side-color;
   }
 }
 
-.social-media-list {
-  .icon {
-    padding-right: 5px;
-  }
-
-  li + li {
-    padding-top: 5px;
+.flat-list {
+  li {
+    display: inline-block
   }
 }
 
@@ -231,21 +253,94 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $side-color-light;
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: lighten($side-color-light, 6%);
     }
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: lighten($side-color-light, 3%);
+    border: 1px solid darken($side-color-light, 4%);
+    border-bottom-color: darken($side-color-light, 12%);
   }
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $side-color-light;
   }
+}
+
+.photos div {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+// anim
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotating {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// LOader
+
+.noscroll {
+    position: fixed;
+    overflow: hidden;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: $brand-color;
+  transition: opacity 1s;
+}
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 103;
+
+
+  &:after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-image: url('/assets/img/0main/favicon.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 6px solid transparent;
+    border-top: 6px solid $side-color;
+    animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
+  }
+}
+
+.fade {
+  opacity: 0;
 }

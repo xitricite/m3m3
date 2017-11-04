@@ -1,34 +1,30 @@
 ---
 layout: default
+css: wa-mediabox.min.css
+javascript: wa-mediabox.min.js
 ---
-{% include base.html %}
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
+<header class="post-header">
+  <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      <span class="fa fa-clock-o"></span> {{ page.date | date: date_format }}
+    </time>
+    
+    {% if page.author %}
+      <span class="fa fa-user"></span> Written by: {{ page.author }}
+    {% endif %}
 
-  <div class="post-content" itemprop="articleBody">
-
-
-  <section class="photos">
-  {% for image in page.image %} <!-- Loop through the photos from the YAML frontmatter from an empty Jekyll post -->
-    <figure>
-      <img src="{{ page.image[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{page.image-alt[forloop.index0]}}"> <!-- Insert the src, the alt text for each image, using the forloop.index0 liquid helper -->
-    </figure>
-    <figcaption>{{page.image-caption[forloop.index0]}}</figcaption> <!-- and the figcaption too -->
-  {% endfor %}
-  </section>
-
-    {{ content }}
+    {% if page.tags %}
+    <span class="fa fa-tags"></span>
+      <ul class="listed">
+        {% for item in page.tags %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
+</header>
 
-</article>
+{{ content }}

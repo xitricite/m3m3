@@ -9,20 +9,28 @@ thank
 https://blog.webjeda.com/jekyll-categories/
 -->
 <p>All post categories</p>
+
 {% for category in site.categories %}
-<div class="archive-group">
-  {% capture category_name %}{{ category | first }}{% endcapture %}
-  <div id="#{{ category_name | slugize }}">
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <!---->
-    <article class="archive-item">
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-  </div>
-  {% endfor %}
-</div>
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="post-content" id="#{{ category_name | capitalize }}">
+      <h2 class="category-head">{{ category_name }}</h2>
+
+      {% for post in site.categories[category_name] %}
+      <a class="plain" href="{{ site.baseurl }}{{ post.url }}">
+        <h4>{{post.title}}</h4>
+        {{ post.content | truncatewords: 4 }}
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <div class="post-meta">
+          <span class="fa fa-clock-o"></span> {{ post.date | date: date_format | date_to_string }}
+          {% if post.tags %}
+            <ul class="listed">
+              <span class="fa fa-tags"></span>
+              {% for item in post.tags %}
+                <li>{{ item }}</li>
+              {% endfor %}
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
 {% endfor %}

@@ -4,7 +4,30 @@ permalink: /portfolio/
 title: Portfolio
 ---
 
-{% for post in site.categories.portfolio %}
- <li><span>{{ post.date | date_to_string }}</span><br>
- &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+<ul class="post-list photoGrid">
+	{% for post in site.categories.portfolio %}
+		<li class="post-cover" {% if post.featured-img %}
+		{% if post.featured-img contains 'http' %}
+			style="background-image: url('{{ post.featured-img }}');"
+			{% else %}
+			style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url}}');"
+		{% endif %}
+		{% endif %}>
+			<a href="{{ post.url }}">
+				<h2>{{ post.title }}</h2>
+				{{ post.content | truncatewords: 4 }}
+				<div class="post-meta">
+					<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }}
+					{% if post.tags %}
+					<span class="fa fa-tags"></span>
+					<ul class="listed">
+						{% for item in post.tags %}
+									<li>{{ item }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					</div>
+			</a>
+			</li>
+	{% endfor %}
+</ul>

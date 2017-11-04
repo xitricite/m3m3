@@ -1,0 +1,41 @@
+---
+layout: post-cover
+title:  "Association of Malaysian Students"
+date:   2017-08-30 09:00:00 +0800
+categories: portfolio
+tags:
+  - Club
+  - Photoshop
+  - Illustrator
+  - After Effects
+
+featured-img: https://scontent.fmel3-1.fna.fbcdn.net/v/t31.0-8/16179285_1067122613414890_1819145948971584794_o.jpg?oh=26a36db15806fa0dbf4ea594f47c5626&oe=5AA11F7B
+
+image:
+  - ams/2017 ams recon.png
+  - ams/AMS_PASAR_MALAM_MENU.png
+  - ams/style-guide.png
+
+image-thumb:
+  - ams/2017 ams recon.png
+  - ams/AMS_PASAR_MALAM_MENU.png
+  - ams/style-guide.png
+
+image-alt:
+  - Field trip poster
+  - Menu for Pasar Malam
+  - style guide
+
+image-caption:
+  - Field trip poster
+  - Menu for Pasar Malam
+  - style guide
+
+embeded-url:
+  - https://www.youtube.com/embed/Rjk6xpyNg1E
+  - https://www.youtube.com/embed/F8d4PoJMn7o
+  - https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fams.curtin%2Fposts%2F1332164350244047%3A0
+  - https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fams.curtin%2Fvideos%2F1280568802070269%2F
+
+---
+

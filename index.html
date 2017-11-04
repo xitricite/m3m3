@@ -1,14 +1,107 @@
 ---
-layout: default
+css:
+  - swiper.min.css
+  - wa-mediabox.min.css
+javascript:
+  - swiper.min.js
+  - wa-mediabox.min.js
+  - main.js
 ---
-<div class="js-Carousel" id="carousel">
-    <ul>
-        <li>meme 1</li>
-        <li>meme 2</li>
-        <li>meme 3</li>
-        <li>meme 4</li>
-    </ul>
-</div>
 
-<script src="{{ "/assets/js/vanilla-js-carousel.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <main class="page-content" aria-label="Content">
+    <div class="hero center">
+      <div class="wrapper">
+        <h1>Hello! <br>I'm Casey Lim!</h1>
+        <h4>Illustrator, &amp; Animator from Perth</h4>
+        <a href="/portfolio" class="btn">See something cool <span class="hoverable" data-hover="(´• ω •`)ﾉ" data-active="ᕕ( ᐛ )ᕗ"><span>(´☆▽☆`)ﾉ</span></span> →</a>
+        </div>
+    </div>
+
+    <div class="center glow">
+       <h3>&darr;</h3>
+    </div>
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container wave-mask">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="center pure-g wrapper" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name"	data-iframe="true" data-width="853" data-height="480">
+            <div class="pure-u-1-4 glow">
+              <h3>Featured Works</h3>
+              <p>Creating 🤔</p>
+            </div>
+            <div class="pure-u-3-4">
+              <img class="pure-img" src="{{ site.reel_video_thumb }}}">
+            </div>
+          </a>
+        </div>
+        {% for post in site.categories.portfolio %}
+        <div class="swiper-slide post-cover" {% if post.featured-img %}
+		{% if post.featured-img contains 'http' %}
+			style="background-image: url('{{ post.featured-img }}');"
+			{% else %}
+			style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url}}');"
+		{% endif %}
+		{% endif %}>
+           <a href="{{ post.url }}">
+            <div class="center">
+              <div>
+                 <h2>{{ post.title }}</h2>
+                  {{ post.content | truncatewords: 4 }}
+                  <div class="post-meta">
+                  <span class="fa fa-clock-o"></span> {{ post.date | date_to_string }}
+                  {% if post.tags %}
+                  <span class="fa fa-tags"></span>
+                  <ul class="listed">
+                  {% for item in post.tags %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                  </ul>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+           </a>
+         </div>
+         {% endfor %}
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="wrapper pure-g">
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <div class="contact pure-u-1-2 wrapper darkBG">
+        <h3>Contact</h3>
+        <form class="pure-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd960v_-Loi8tiFD5ip2oVX2uJJkgMeMo0HW67qy-ZRSX08Ww/formResponse">
+          <fieldset class="pure-group">
+              <input name="entry.725244480" class="pure-input-1" id="name" type="text" placeholder="Name" required>
+              <input name="entry.42795683" class="pure-input-1" id="email" type="email" placeholder="Email" required>
+          </fieldset>
+          <fieldset class="pure-group">
+          <input name="entry.1119172669" class="pure-input-1" id="subject" type="text" placeholder="Subject">
+              <textarea name="entry.276634824" class="pure-input-1" id="message" placeholder="Message"></textarea>
+          </fieldset>
+          <div class="g-recaptcha" style="width: 100%;" data-sitekey="6LdXJzcUAAAAAG9DXGIn8dIt8sB3pI9sKN5bjGYT"></div>
+              <button type="submit" class="pure-input-1 pure-button pure-button-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  {% include footer.html %}
+</body>
+
+</html>
