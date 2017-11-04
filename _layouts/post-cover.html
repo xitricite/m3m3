@@ -70,9 +70,9 @@ javascript: wa-mediabox.min.js
       {% if page.embeded-url %}
         {% for embed in page.embeded-url %} 
           <div>
-            <div class="videoWrapper">
+            <a class="videoWrapper" href="{{ page.embeded-url[forloop.index0] }}" data-mediabox="my-gallery-name"	data-iframe="true" data-width="853" data-height="480">
               <iframe src="{{ page.embeded-url[forloop.index0] }}" frameborder="0" allowfullscreen></iframe>
-            </div>
+            </a>
           </div>
         {% endfor %}
       {% endif %}

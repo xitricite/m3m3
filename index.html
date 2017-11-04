@@ -38,24 +38,18 @@ javascript:
           <a class="center pure-g wrapper" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name"	data-iframe="true" data-width="853" data-height="480">
             <div class="pure-u-1-4 glow">
               <h3>Featured Works</h3>
-              <p>Creating 🤔</p>
+              <p>Creating is fun 🤔</p>
             </div>
             <div class="pure-u-3-4">
-              <img class="pure-img" src="{{ site.reel_video_thumb }}}">
+              <img class="pure-img" src="{{ site.reel_video_thumb }}">
             </div>
           </a>
         </div>
         {% for post in site.categories.portfolio %}
-        <div class="swiper-slide post-cover" {% if post.featured-img %}
-		{% if post.featured-img contains 'http' %}
-			style="background-image: url('{{ post.featured-img }}');"
-			{% else %}
-			style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url}}');"
-		{% endif %}
-		{% endif %}>
+        <div class="swiper-slide post-cover" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');" {% endif %} {% endif %}>
            <a href="{{ post.url }}">
-            <div class="center">
-              <div>
+            <div class="center pure-g">
+              <div class="pure-u-1 pure-u-md-1-3">
                  <h2>{{ post.title }}</h2>
                   {{ post.content | truncatewords: 4 }}
                   <div class="post-meta">

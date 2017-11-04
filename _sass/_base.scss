@@ -292,7 +292,7 @@ table {
 
 @keyframes rotating {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -312,7 +312,8 @@ table {
   left: 0;
   right: 0;
   z-index: 100;
-  background: $brand-color;
+  background-color: $background-color;
+  background-image: linear-gradient(to bottom, $brand-color 0%, $side-color-light 100%);
   transition: opacity 1s;
 }
 

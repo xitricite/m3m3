@@ -9,6 +9,7 @@ tags:
 
 featured-img: https://img.youtube.com/vi/Y8P55vcugn8/maxresdefault.jpg
 
-embeded-url: https://www.youtube.com/embed/Y8P55vcugn8
+embeded-url:
+  - https://www.youtube.com/embed/Y8P55vcugn8
 
 ---
