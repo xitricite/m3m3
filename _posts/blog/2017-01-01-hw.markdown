@@ -6,4 +6,6 @@ categories: blog
 tags: none
 ---
 
-![image-title-here](https://www.facebook.com/rsrc.php/v3/y4/r/-PAXP-deijE.gif){:class="pure-img"}
+I've given up on Jekyll and Liquid and all that. This website was such a challenge and such a leap from wordpress PH P devleopment.
+
+This website is best viewed on Chrome ~Version 61.0.3163.100 (Official Build) (64-bit)~.

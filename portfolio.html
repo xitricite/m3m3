@@ -10,7 +10,7 @@ title: Portfolio
 		{% if post.featured-img contains 'http' %}
 			style="background-image: url('{{ post.featured-img }}');"
 			{% else %}
-			style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url}}');"
+			style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
 		{% endif %}
 		{% endif %}>
 			<a href="{{ post.url }}">

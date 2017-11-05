@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Meme"
+date:   2017-01-01 06:55:36 +0800
+categories: blog
+---
+
+
+TESTING OUT MARKDOWN
+
+This *is*{:.underline} some `code`{:#id}{:.class}.
+A [link](test.html){:rel='something'} and some **tools**{:.tools}.
+
+
+This is some text.[^1]
+
+[^1]: Some *crazy* footnote definition.
+
+
+Image link
+[![Foo](https://orig00.deviantart.net/d5f6/f/2017/180/2/7/luaa__by_lugia_sea-dbefxn5.gif){:class="pure-img"}](http://fav.me/dbefxn5)
+
+Image
+![image-title-here](http://i0.kym-cdn.com/photos/images/original/001/018/899/936.jpg){:class="pure-img"}

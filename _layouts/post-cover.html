@@ -54,12 +54,8 @@ javascript: wa-mediabox.min.js
         {% for image in page.image %}
           <div>
             <figure>
-              <a href="{{ page.image[forloop.index0] }}" data-mediabox="my-gallery-name" data-title="{{ page.image-alt[forloop.index0] }}">
-                {% if page.image contains 'http' %}
-                <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}">
-                {% else %}
-                <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}">
-              {% endif %}</a>
+              {% if page.image contains 'http' %} <a href="{{ page.image[forloop.index0] }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% else %} <a href="{{ page.image[forloop.index0] | prepend: "assets/img/" | relative_url }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% endif %}
+                {% if page.image contains 'http' %} <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}"> {% else %} <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}"> {% endif %}</a>
           </figure>
           <figcaption>{{page.image-caption[forloop.index0]}}</figcaption>
           </div>

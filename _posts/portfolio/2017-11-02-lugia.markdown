@@ -1,0 +1,20 @@
+---
+layout: post-cover
+title:  "Paint"
+date:   2016-11-24 09:00:00 +0800
+categories: portfolio
+tags:
+  - Other
+
+featured-img: https://img.youtube.com/vi/SOKNOWCpRX4/mqdefault.jpg
+
+embeded-url:
+  - https://www.youtube.com/embed/SOKNOWCpRX4
+
+---
+
+... ... ... . ...........
+
+{% include lightbox.html lightbox_large="https://orig00.deviantart.net/c762/f/2017/180/b/f/luaa__by_lugia_sea-dbefxn5.gif" lightbox_small="https://orig00.deviantart.net/d5f6/f/2017/180/2/7/luaa__by_lugia_sea-dbefxn5.gif" lightbox_title="http://fav.me/dbefxn5" lightbox_alt="http://fav.me/dbefxn5"  %} IDK 
+
+![result](http://sta.sh/01ercs96n4sx){:class="pure-img"}
