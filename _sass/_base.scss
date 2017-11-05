@@ -1,20 +1,18 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
 
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -22,11 +20,12 @@ ul, ol, dl, figure,
 /**
  * Basic styling
  */
+
 html {
   background-color: $background-color;
   background-image: $background-img;
+  background-image: $background-img, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 186, 188, 1)), to(rgba(132, 128, 123, 1)));
   background-image: $background-img, linear-gradient(to bottom, rgba(0, 186, 188, 1) 0%, rgba(132, 128, 123, 1) 100%);
-
   body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -38,18 +37,22 @@ html {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
-       -moz-font-feature-settings: "kern" 1;
-         -o-font-feature-settings: "kern" 1;
-            font-feature-settings: "kern" 1;
-    font-kerning: normal;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .pure-g [class*=pure-u] {
     font-family: $base-font-family
   }
-  
   h1, h2, h3, h4, h5, h6 {
     font-family: $side-font-family;
   }
@@ -59,17 +62,18 @@ html {
 /**
  * Images
  */
+
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
 
-
 /**
  * Figures
  */
-figure > img {
+
+figure>img {
   display: block;
 }
 
@@ -78,33 +82,32 @@ figcaption {
 }
 
 
-
 /**
  * Lists
  */
+
 ul, ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+  >ul, >ol {
     margin-bottom: 0;
   }
 }
 
 
-
 /**
  * Headings
  */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
 h1 {
   font-size: 1.8em;
-  }
+}
 
 h2 {
   font-size: 1.6em;
@@ -118,26 +121,25 @@ h4 {
   font-size: 1.2em;
 }
 
+
 /**
  * Links
  */
+
 a {
   color: $side-color;
   text-decoration: none;
+  -webkit-transition: $transition;
   transition: $transition;
-
   &:visited {
     color: darken($side-color, 15%);
   }
-
   &:hover {
     color: $brand-color;
     text-decoration: underline;
   }
-
   .flat-list &:hover {
     text-decoration: none;
-
     .username {
       text-decoration: underline;
     }
@@ -148,6 +150,7 @@ a {
 /**
  * Blockquotes
  */
+
 blockquote {
   color: $side-color;
   border-left: 4px solid $side-color-light;
@@ -155,19 +158,17 @@ blockquote {
   font-size: 1.125em;
   letter-spacing: -1px;
   font-style: italic;
-
   > :last-child {
     margin-bottom: 0;
   }
 }
 
 
-
 /**
  * Code formatting
  */
-pre,
-code {
+
+pre, code {
   font-size: 0.9375em;
   border: 1px solid $side-color-light;
   border-radius: 3px;
@@ -181,8 +182,7 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: auto;
-
-  > code {
+  >code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -190,32 +190,29 @@ pre {
 }
 
 
-
 /**
  * Wrapper
  */
+
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width : calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
-
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width : calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
 
 
-
 /**
  * Clearfix
  */
+
 %clearfix:after {
   content: "";
   display: table;
@@ -223,14 +220,13 @@ pre {
 }
 
 
-
 /**
  * Icons
  */
-.icon > svg {
+
+.icon>svg {
   display: inline-block;
   vertical-align: middle;
-
   path {
     fill: $side-color;
   }
@@ -243,10 +239,10 @@ pre {
 }
 
 
-
 /**
  * Tables
  */
+
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
@@ -274,33 +270,42 @@ table {
 
 .photos div {
   padding: 1rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 // anim
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes rotating {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
 @keyframes rotating {
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
 }
 
 // LOader
-
 .noscroll {
-    position: fixed;
-    overflow: hidden;
+  position: fixed;
+  overflow: hidden;
 }
 
 #overlay {
@@ -311,9 +316,11 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 99999;
   background-color: $background-color;
-  background-image: linear-gradient(to bottom, $brand-color 0%, $side-color-light 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($brand-color-dark), to($brand-color));
+  background-image: linear-gradient(to bottom, $brand-color-dark 0%, brand-color 100%);
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -322,23 +329,25 @@ table {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
-  z-index: 103;
-
-
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999999;
   &:after {
     content: '';
     display: block;
     border-radius: 50%;
     width: 64px;
     height: 64px;
+    background-color: $side-color-light;
     background-image: url('/assets/img/0main/favicon.png');
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    border: 6px solid transparent;
-    border-top: 6px solid $side-color;
-    animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
+    // border: 6px solid transparent;
+    // border-top: 6px solid $side-color;
+    box-shadow: 2px 2px 50px 5px $side-color-light, 2px 2px 80px $side-color-light, 4px 4px 100px $side-color;
+    -webkit-animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
+            animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
   }
 }
 

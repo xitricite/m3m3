@@ -4,26 +4,24 @@ permalink: /blog/
 title: Blog
 ---
 
-<p>All Blog Posts</p>
-
 <ul class="post-list">
- {% for post in site.categories.blog %}
-  <li>
-   <a class="plain" href="{{ post.url }}">
-    <h2>{{ post.title | capitalize }}</h2>
-    {{ post.content | truncatewords: 4 }}
-    <div class="post-meta">
-     <span class="fa fa-clock-o"></span> {{ post.date | date_to_string }}
-     {% if post.tags %}
-     <ul class="listed">
-      <span class="fa fa-tags"></span>
-      {% for item in post.tags %}
-         <li>{{ item }}</li>
-      {% endfor %}
-     </ul>
-     {% endif %}
-     </div>
-   </a>
-   </li>
- {% endfor %}
+	{% for post in site.categories.blog %}
+		<li class="plain">
+			<a href="{{ post.url }}">
+				<h2>{{ post.title }}</h2>
+				{{ post.content | truncatewords: 4 }}
+				<div class="post-meta">
+					<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }}
+					{% if post.tags %}
+					<span class="fa fa-tags"></span>
+					<ul class="listed">
+						{% for item in post.tags %}
+							<li>{{ item }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					</div>
+			</a>
+		</li>
+	{% endfor %}
 </ul>
