@@ -196,16 +196,23 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+
   &>li, &>div {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
-    min-width: 18em;
+    min-width: 18vw;
+
+    @include media-query($on-laptop) {
+      min-width: 40vw;
+    }
+
     padding: 0;
     margin: 8px;
     opacity: 0;
     -webkit-animation: fadeIn 0.8s ease-out 0s 1 forwards;
             animation: fadeIn 0.8s ease-out 0s 1 forwards;
+
     @for $i from 1 to 20 {
       &:nth-child(#{$i}) {
         -webkit-animation-delay: $i * 0.25s;
@@ -373,8 +380,8 @@
           align-items: stretch;
   &>a {
     text-decoration: none;
-    width: 100%;
-    min-height: 70vh;
+    height: 70vh;
+    width: inherit;
     padding: 0;
   }
 }
@@ -492,6 +499,8 @@
 .videoWrapper {
   position: relative;
   height: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
   min-height: 40vh;
   display: block;
 

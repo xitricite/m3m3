@@ -5,8 +5,14 @@
 	// Carousel
 	var swiper = new Swiper('.swiper-container', {
 		// direction: 'vertical',effect: 'fade',
+		spaceBetween: 0,
+    keyboard: {
+      enabled: true,
+    },
+    speed: 600,
+    parallax: true,
 		autoplay: {
-			delay: 5000,
+			delay: 7000,
 			disableOnInteraction: false,
 		},
 		pagination: {
