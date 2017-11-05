@@ -1,7 +1,7 @@
 ---
 layout: post-cover
 title:  "Association of Malaysian Students"
-date:   2017-08-30 09:00:00 +0800
+date:   2015-08-30 09:00:00 +0800
 categories: portfolio
 tags:
   - Club
@@ -39,3 +39,9 @@ embeded-url:
 
 ---
 
+Mid 2015 – End of 2017, Association of Malaysian Students (AMS)
+
+Working wih the team, Khai, Afiq, ZZ, Ben, Amber, Stevis, Sufi, Amira... (this year there wasn't many people, more people who joined!) I was the graphics gal.
+  - Created striking visual designs, including promotional event posters and online content, to encourage students to experience a bit of Malaysian culture (such as Mamak Night).
+  - Redeveloped the visual identity of AMS through collaboration with fellow committee and club members. Which ensured that I delivered to the creative brief and received positive feedback from club members.
+  - Used Indesign’s Data Merge to create batches of individual committee business cards quickly and consistently

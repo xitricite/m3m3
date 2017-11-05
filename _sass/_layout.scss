@@ -182,6 +182,11 @@
   }
 }
 
+
+.spaceY{
+  margin: 8px;
+}
+
 // 
 .photoGrid {
   display: -webkit-box;
@@ -374,10 +379,7 @@
   }
 }
 
-.wa-mediabox-frame {
-  background: $side-color-light;
-}
-
+// CAROUSEL
 .swiper-container {
   margin: 2em auto;
 }
@@ -386,8 +388,21 @@
   bottom: 30px;
 }
 
-.swiper-pagination-bullet, .wa-mediabox-frame .wa-mediabox-close {
+.swiper-pagination-bullet,.wa-mediabox-close {
   background: $brand-color;
+}
+
+// MODAL
+
+.wa-mediabox-title {
+    font-size: 1.2em;
+    font-weight: 300;
+    background: linear-gradient(to bottom, rgba(15, 26, 43, 0) 0%, rgb(15, 26, 43) 100%);
+    text-shadow: 1px 1px 1px #0f1a2b;
+}
+
+.wa-mediabox-frame {
+  background-color: transparentize($text-color, 0.8);
 }
 
 .wa-mediabox-preloader .wa-mediabox-preloader-spinner {
@@ -396,7 +411,6 @@
 
 .photos div {
   min-height: 30vh;
-  min-height: -webkit-fill-available;
   margin-bottom: $spacing-unit;
   & figure a img, .contact {
     background-color: transparentize($text-color, 0.8);
@@ -453,8 +467,10 @@
     }
   }
   &>a, &>div {
-    display: block;
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: $side-color;
     text-decoration: none; // transform: translateY(100%);
   }
@@ -476,7 +492,13 @@
 .videoWrapper {
   position: relative;
   height: 100%;
+  min-height: 40vh;
   display: block;
+
+  @include media-query($on-laptop) {
+    min-height: 0;
+  }
+
   iframe {
     position: absolute;
     top: 0;

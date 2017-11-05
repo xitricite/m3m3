@@ -49,7 +49,7 @@ javascript:
         <div class="swiper-slide post-cover" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');" {% endif %} {% endif %}>
            <a href="{{ post.url }}">
             <div class="center pure-g">
-              <div class="pure-u-1 pure-u-md-1-3">
+              <div style="min-height:20vh;" class="pure-u-1 pure-u-md-1-3">
                  <h2>{{ post.title }}</h2>
                   {{ post.content | truncatewords: 4 }}
                   <div class="post-meta">
@@ -71,29 +71,6 @@ javascript:
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
-    </div>
-
-
-    <div class="wrapper pure-g">
-      <script src='https://www.google.com/recaptcha/api.js'></script>
-      <div class="contact pure-u-1 pure-u-md-1-2 darkBG">
-        <h3>Contact</h3>
-        <form class="pure-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd960v_-Loi8tiFD5ip2oVX2uJJkgMeMo0HW67qy-ZRSX08Ww/formResponse">
-          <fieldset class="pure-group">
-              <input name="entry.725244480" class="pure-input-1" id="name" type="text" placeholder="Name" required>
-              <input name="entry.42795683" class="pure-input-1" id="email" type="email" placeholder="Email" required>
-          </fieldset>
-          <fieldset class="pure-group">
-          <input name="entry.1119172669" class="pure-input-1" id="subject" type="text" placeholder="Subject">
-              <textarea name="entry.276634824" class="pure-input-1" id="message" placeholder="Message"></textarea>
-          </fieldset>
-          <div class="videoWrapper"><div class="g-recaptcha" data-sitekey="6LdXJzcUAAAAAG9DXGIn8dIt8sB3pI9sKN5bjGYT"></div></div>
-              <button type="submit" class="pure-input-1 pure-button pure-button-primary">Submit</button>
-        </form>
-      </div>
-      <div class="contact pure-u-1 pure-u-md-1-2">
-        
-      </div>
     </div>
 
   </main>

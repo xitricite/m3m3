@@ -332,6 +332,7 @@ table {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 999999;
+
   &:after {
     content: '';
     display: block;
@@ -345,7 +346,7 @@ table {
     background-repeat: no-repeat;
     // border: 6px solid transparent;
     // border-top: 6px solid $side-color;
-    box-shadow: 2px 2px 50px 5px $side-color-light, 2px 2px 80px $side-color-light, 4px 4px 100px $side-color;
+    box-shadow: 2px 2px 50px 5px $side-color-light, 2px 2px 200px $side-color-light, 4px 4px 300px 50px $side-color;
     -webkit-animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
             animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
   }

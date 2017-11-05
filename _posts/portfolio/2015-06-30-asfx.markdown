@@ -1,0 +1,19 @@
+---
+layout: post-cover
+title:  "Animation Conpositing"
+date:   2015-06-30 09:00:00 +0800
+categories: portfolio
+tags:
+  - Uni Project
+  - After Effects
+
+featured-img: https://img.youtube.com/vi/MSKKUWb8V8w/mqdefault.jpg
+
+embeded-url:
+ - https://www.youtube.com/embed/MSKKUWb8V8w
+ - https://www.youtube.com/embed/8E2lt0MEFqY
+ - https://www.youtube.com/embed/RWlGJlo4pk4
+
+---
+
+SUPER CRINGE
