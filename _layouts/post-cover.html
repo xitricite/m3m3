@@ -24,22 +24,17 @@ javascript: wa-mediabox.min.js
         <div class="wrapper">
           <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
           <div class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-              <span class="fa fa-clock-o"></span> {{ page.date | date: date_format }}
-            </time>
-            
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="fa fa-clock-o"></span> {{ page.date | date: date_format }} {% if page.tags %}
+								<ul class="listed">
+									<li><span class="fa fa-tags"></span></li>
+									{% for item in page.tags %}
+									<li>{{ item }}</li>
+									{% endfor %}
+								</ul>
+            {% endif %}
             {% if page.author %}
               <span class="fa fa-user"></span> Written by: {{ page.author }}
-            {% endif %}
-        
-            {% if page.tags %}
-              <span class="fa fa-tags"></span>
-              <ul class="listed">
-                {% for item in page.tags %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-              </ul>
             {% endif %}
           </div>
         </div>

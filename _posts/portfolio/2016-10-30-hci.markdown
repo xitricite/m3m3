@@ -1,0 +1,20 @@
+---
+layout: post-cover
+title:  "HUman Computer Interfaces"
+date:   2017-11-02 09:00:00 +0800
+categories: portfolio
+tags:
+  - Uni Project
+  - User Experience
+
+featured-img: 
+embeded-url:
+ - https://projects.invisionapp.com/share/VP9807C32#/screens/202820666
+---
+
+Ergonomical infographic idk
+Made for a pal
+
+[memed](https://projects.invisionapp.com/share/VP9807C32#/screens/202820666)
+
+<!--![image](http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png)-->
