@@ -1,6 +1,6 @@
 ---
 layout: post-cover
-title:  "HUman Computer Interfaces"
+title:  "Human Computer Interfaces"
 date:   2017-11-02 09:00:00 +0800
 categories: portfolio
 tags:
@@ -9,7 +9,7 @@ tags:
 
 featured-img: 
 embeded-url:
- - https://projects.invisionapp.com/share/VP9807C32#/screens/202820666
+
 ---
 
 Ergonomical infographic idk

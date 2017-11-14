@@ -28,26 +28,17 @@ github_username:  xitricite
 youtube_username: UCEaHE6GHVPDvB5os4VMXsgg
 
 reel_video_thumb: https://img.youtube.com/vi/CYktJ75Q_Uw/maxresdefault.jpg
-reel_video_url: https://www.youtube.com/embed/CYktJ75Q_Uw
+reel_video_url: https://www.youtube.com/embed/mcRhZQHjJHM
 
 # Build settings
 markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-
-paginate: 5
-paginate_path: "/blog/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - portfolio
+  - text

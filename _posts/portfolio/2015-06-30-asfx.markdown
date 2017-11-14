@@ -1,6 +1,6 @@
 ---
 layout: post-cover
-title:  "Animation Conpositing"
+title:  "Animation and Special Effects Compositing"
 date:   2015-06-30 09:00:00 +0800
 categories: portfolio
 tags:

@@ -7,13 +7,13 @@ tags:
   - Uni Project
   - Illustrator
 
-featured-img: http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png
+featured-img: https://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png
 
 ---
 
 Ergonomical infographic idk
 Made for a pal
 
-{% include lightbox.html lightbox_large="http://res.cloudinary.com/xitricite/image/upload/v1509877649/ots_bucf1g.png" lightbox_small="http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png" lightbox_title="url" lightbox_alt="url"  %}
+{% include lightbox.html lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1509877649/ots_bucf1g.png" lightbox_small="http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png" lightbox_title="url" lightbox_alt="url"  %}
 
 <!--![image](http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1509877649/ots_bucf1g.png)-->

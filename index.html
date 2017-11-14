@@ -15,15 +15,17 @@ javascript:
 {% include head.html %}
 
 <body>
-
 	{% include header.html %}
 
 	<main class="page-content" aria-label="Content">
-		<div class="hero center">
-			<div class="wrapper">
+		<div class="hero pure-g wrapper center">
+			<div class="pure-u-1 pure-u-md-5-6">
 				<h1>Hello! <br>I'm Casey Lim!</h1>
 				<p>Illustrator, &amp; Animator from Perth</p>
 				<a href="/portfolio" class="btn">See something cool <span class="hoverable" data-hover="(´• ω •`)ﾉ" data-active="ᕕ( ᐛ )ᕗ"><span>(´☆▽☆`)ﾉ</span></span> →</a>
+			</div>
+			<div class="pure-u-1-3 pure-u-md-1-6">
+				<img class="pure-img" src="{{ "/assets/img/0main/cat.png" | relative_url }}">
 			</div>
 		</div>
 
@@ -31,41 +33,81 @@ javascript:
 			<h3>&darr;</h3>
 		</div>
 
-		<!-- Swiper Slider -->
-		<div class="swiper-container wave-mask">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide fa-2x">
-					<a class="center post-cover" style="background-image: url('{{ site.reel_video_thumb }}');" data-swiper-parallax="-300" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name" data-iframe="true" data-width="853" data-height="480">
-						<div data-swiper-parallax="-400">
-							<h3 data-swiper-parallax="200">Featured Works</h3>
-							<p data-swiper-parallax="400">Creating is fun 🤔</p>
-						</div>
-					</a>
-				</div>
-				{% for post in site.categories.portfolio %}
-				<div class="swiper-slide">
-					<a class="post-cover center" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
-					 {% endif %} {% endif %} href="{{ post.url }}">
-						<div data-swiper-parallax="-400">
-							<h2 data-swiper-parallax="200">{{ post.title }}</h2>
-							<p data-swiper-parallax="400">{{ post.content | truncatewords: 4 }}</p>
-							<div data-swiper-parallax="600" class="post-meta">
-								<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }} {% if post.tags %}
-								<ul class="listed">
-									<li><span class="fa fa-tags"></span></li>
-									{% for item in post.tags %}
-									<li>{{ item }}</li>
-									{% endfor %}
-								</ul>
-								{% endif %}
-							</div>
-						</div>
-					</a>
-				</div>
-				{% endfor %}
+		<div class="wrapper">
+			<div class="center glow">
+				<h2>Portfolio &#x1f4d6;</h2>
 			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
+			<!-- Swiper Slider -->
+			<div class="swiper-container wave-mask">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide fa-2x">
+						<a class="center post-cover" style="background-image: url('{{ site.reel_video_thumb }}');" data-swiper-parallax="-300" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name" data-iframe="true" data-width="853" data-height="480">
+							<div data-swiper-parallax="-400">
+								<h3 data-swiper-parallax="200">Featured Works</h3>
+								<p data-swiper-parallax="400">Creating is fun 🤔</p>
+							</div>
+						</a>
+					</div>
+					{% for post in site.categories.portfolio limit:4 %}
+					<div class="swiper-slide">
+						<a class="post-cover center" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
+						 {% endif %} {% endif %} href="{{ post.url }}">
+							<div data-swiper-parallax="-400">
+								<h2 data-swiper-parallax="200">{{ post.title }}</h2>
+								<p data-swiper-parallax="400">{{ post.content | truncatewords: 4 }}</p>
+								<div data-swiper-parallax="600" class="post-meta">
+									<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }} {% if post.tags %}
+									<ul class="listed">
+										<li><span class="fa fa-tags"></span></li>
+										{% for item in post.tags %}
+										<li>{{ item }}</li>
+										{% endfor %}
+									</ul>
+									{% endif %}
+								</div>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="spaceY"></div>
+
+			<!-- GRID -->
+			<ul class="post-list photoGrid">
+				{% for post in site.categories.portfolio offset:4 %}
+				<li class="post-cover" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
+				 {% endif %} {% endif %}>
+					<a href="{{ post.url }}">
+						<h2>{{ post.title }}</h2>
+						{{ post.content | truncatewords: 4 }}
+						<div class="post-meta">
+							<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }} {% if post.tags %}
+							<ul class="listed">
+								<li><span class="fa fa-tags"></span></li>
+								{% for item in post.tags %}
+								<li>{{ item }}</li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</div>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<div class="spaceY"></div>
+
+			<!-- VIDEO -->
+			<!--<div class="center glow">-->
+			<!--	<h2>Showreel &#x1F914; &#128173;</h2>-->
+			<!--</div>-->
+			<!--<div class="videoWrapper wave-mask">-->
+			<!--	<iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/mcRhZQHjJHM?autoplay=0&controls=0&showinfo=0&autohide=1"></iframe>-->
+			<!--</div>-->
+			<!--<div class="spaceY"></div>-->
+
 		</div>
 
 	</main>

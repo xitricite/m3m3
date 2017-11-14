@@ -4,10 +4,9 @@ permalink: /blog/
 title: Blog
 ---
 
-<ul class="post-list">
+<div class="post-list photoGrid">
 	{% for post in site.categories.blog %}
-		<li class="plain">
-			<a href="{{ post.url }}">
+			<a class="plain" href="{{ post.url }}">
 				<h2>{{ post.title }}</h2>
 				{{ post.content | truncatewords: 4 }}
 				<div class="post-meta">
@@ -22,6 +21,5 @@ title: Blog
 					{% endif %}
 					</div>
 			</a>
-		</li>
 	{% endfor %}
-</ul>
+</div>
