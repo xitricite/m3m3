@@ -1,0 +1,39 @@
+---
+layout: post-cover
+title:  "Blended 2017"
+date:   2017-08-01 09:00:00 +0800
+categories: portfolio
+tags:
+  - Uni Project
+
+featured-img: http://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
+embeded: https://codepen.io/xitricite/pen/OxQqQE
+
+---
+
+A night celebrating the graduates of Digital Design 2017, also serves as a small networking event. Ongoing project with: Aleks, Planning; Mason, Planning, Video; Josh, Developer; Lia, Planning, Co-ordination.
+ 
+
+<span class="fa fa-globe"></span> [site](http://blendedcurtin.com/)
+
+<div class="photoGrid">
+<div>
+{% include lightbox.html
+    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629301/blended_comp_v2.png"
+    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_600/v1510629301/blended_comp_v2.png"
+    lightbox_title=" "
+    lightbox_alt=" "  %}
+</div><div>
+{% include lightbox.html
+    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629186/blended_comps_v1.png"
+    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/t_media_lib_thumb/v1510629186/blended_comps_v1.png"
+    lightbox_title=" "
+    lightbox_alt=" "  %}
+</div><div>   
+{% include lightbox.html
+    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629537/blended_logos.png"
+    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_400/v1510629537/blended_logos.png"
+    lightbox_title=" "
+    lightbox_alt=" "  %}
+</div>
+</div>

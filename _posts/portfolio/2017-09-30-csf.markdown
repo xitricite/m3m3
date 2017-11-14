@@ -31,7 +31,8 @@ image-caption:
 ---
 
 
-Road safety is... 
-group project augmented reali
+Road safety is more fun in augmented reality! Imagine a bus on fire..
+
+This was a group project with: Joyce, Shawn (did 99% of the unity work), Toby, William and I. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ql8dUW_6VgE" frameborder="0" allowfullscreen></iframe>
