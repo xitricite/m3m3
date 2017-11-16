@@ -46,11 +46,20 @@
 
 {% if layout.javascript %}
   {% for script in layout.javascript %}
-    <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script>
+    {% if layout.javascript contains 'http' %}
+      <script src="{{ script }}"></script>
+        {% else %}
+      <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script> dog
+    {% endif %}
   {% endfor %}
 {% endif %}
+
 {% if page.javascript %}
   {% for script in page.javascript %}
-    <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script>
+    {% if page.javascript contains 'http' %}
+    <script src="{{ script }}"></script>
+      {% else %}
+    <script src="{{ script | prepend: '/assets/js/' | relative_url }}"></script> cat
+    {% endif %}
   {% endfor %}
 {% endif %}

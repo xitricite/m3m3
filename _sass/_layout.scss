@@ -533,3 +533,26 @@
         height: 100%;
     }
 }
+
+// PAGINATION
+.pager {
+    list-style: none;
+    margin: 30px 0px;
+    
+    li a {
+        border-radius: $border-radius;
+        transition: $transition;
+        background: $side-color-light;
+        padding: 4px 18px;
+        text-decoration: none;
+        &:hover {
+            background: $brand-color-dark;
+        }
+    }
+    .previous {
+        float: right;
+    }
+    .next {
+        float: left;
+    }
+}

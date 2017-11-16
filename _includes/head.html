@@ -26,7 +26,11 @@
   {% endif %}
   {% if page.css %}
     {% for stylesheet in page.css %}
+      {% if page.css contains 'http' %}
+      <link rel="stylesheet" href="{{ stylesheet }}" media="screen" type="text/css">
+		  	{% else %}
       <link rel="stylesheet" href="{{ stylesheet | prepend: '/assets/css/' | relative_url }}" media="screen" type="text/css">
+	  	{% endif %}
     {% endfor %}
   {% endif %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

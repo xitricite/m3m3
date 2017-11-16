@@ -7,11 +7,10 @@ tags:
   - Uni Project
   - User Experience
 
-featured-img: https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/thumbnails/202820666.png
-embeded-url: https://projects.invisionapp.com/share/VP9807C32#/screens/202820666
+featured-img: 
 
 ---
 
 .. .. .. .. .. ..
-
-[memed](https://projects.invisionapp.com/share/VP9807C32#/screens/202820666)
+<span class="fa-2x">[<span class="fa fa-file-code-o"></span> site](https://projects.invisionapp.com/share/VP9807C32#/screens/202820666)</span>
+<!--<div class="videoWrapper"><iframe src="https://projects.invisionapp.com/share/VP9807C32#/screens/202820666">&nbsp;</iframe></div>-->

@@ -39,11 +39,11 @@ javascript: wa-mediabox.min.js
           </div>
         </div>
       </header>
-      
+
       <div class="post-content wrapper" itemprop="articleBody">
-      
+
       {{ content }}
-      
+
       <section class="photos photoGrid">
       {% if page.image %}
         {% for image in page.image %}
@@ -58,7 +58,7 @@ javascript: wa-mediabox.min.js
       {% endif %}
 
       {% if page.embeded-url %}
-        {% for embed in page.embeded-url %} 
+        {% for embed in page.embeded-url %}
           <div class="videoWrapper">
               <iframe src="{{ page.embeded-url[forloop.index0] }}" frameborder="0" allowfullscreen>&nbsp;</iframe>
           </div>
@@ -66,7 +66,9 @@ javascript: wa-mediabox.min.js
       {% endif %}
       </section>
 
-      </div>      
+      {% include pagination.html %}
+
+      </div>
 
     </main>
 
