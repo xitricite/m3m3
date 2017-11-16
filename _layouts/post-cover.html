@@ -50,7 +50,7 @@ javascript: wa-mediabox.min.js
           <div>
             <figure>
               {% if page.image contains 'http' %} <a href="{{ page.image[forloop.index0] }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% else %} <a href="{{ page.image[forloop.index0] | prepend: "assets/img/" | relative_url }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% endif %}
-                {% if page.image contains 'http' %} <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}"> {% else %} <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}"> {% endif %}</a>
+                {% if page.image contains 'http' %} <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}"> {% else %} <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}"> {% endif %}&nbsp;</a>
           </figure>
           <figcaption>{{page.image-caption[forloop.index0]}}</figcaption>
           </div>
@@ -59,10 +59,8 @@ javascript: wa-mediabox.min.js
 
       {% if page.embeded-url %}
         {% for embed in page.embeded-url %} 
-          <div>
-            <a class="videoWrapper" href="{{ page.embeded-url[forloop.index0] }}" data-mediabox="my-gallery-name"	data-iframe="true" data-width="853" data-height="480">
-              <iframe src="{{ page.embeded-url[forloop.index0] }}" frameborder="0" allowfullscreen></iframe>
-            </a>
+          <div class="videoWrapper">
+              <iframe src="{{ page.embeded-url[forloop.index0] }}" frameborder="0" allowfullscreen>&nbsp;</iframe>
           </div>
         {% endfor %}
       {% endif %}

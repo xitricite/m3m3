@@ -6,34 +6,38 @@ categories: portfolio
 tags:
   - Uni Project
 
-featured-img: http://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
-embeded: https://codepen.io/xitricite/pen/OxQqQE
+featured-img: https://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
 
 ---
 
-A night celebrating the graduates of Digital Design 2017, also serves as a small networking event. Ongoing project with: Aleks, Planning; Mason, Planning, Video; Josh, Developer; Lia, Planning, Co-ordination.
- 
+A night celebrating the graduates of Digital Design 2017, also serves as a small networking event.
 
-<span class="fa fa-globe"></span> [site](http://blendedcurtin.com/)
+Ongoing project with: Aleks (Planning), Mason (Planning, Video), Josh (Developer), Lia (Planning, Co-ordination). Supervised by Jarrad and Andrew.
+
+
+<span class="fa-2x"><span class="fa fa-globe"></span> [site](http://blendedcurtin.com/)</span>
 
 <div class="photoGrid">
-<div>
-{% include lightbox.html
-    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629301/blended_comp_v2.png"
-    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_600/v1510629301/blended_comp_v2.png"
-    lightbox_title=" "
-    lightbox_alt=" "  %}
-</div><div>
-{% include lightbox.html
-    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629186/blended_comps_v1.png"
-    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/t_media_lib_thumb/v1510629186/blended_comps_v1.png"
-    lightbox_title=" "
-    lightbox_alt=" "  %}
-</div><div>   
-{% include lightbox.html
-    lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629537/blended_logos.png"
-    lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_400/v1510629537/blended_logos.png"
-    lightbox_title=" "
-    lightbox_alt=" "  %}
-</div>
+    <div>
+    {% include lightbox.html
+        lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629301/blended_comp_v2.png"
+        lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_600/v1510629301/blended_comp_v2.png"
+        lightbox_title=" "
+        lightbox_alt=" "  %}
+    </div>
+    <div>
+    {% include lightbox.html
+        lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629186/blended_comps_v1.png"
+        lightbox_small="https://res.cloudinary.com/xitricite/image/upload/t_media_lib_thumb/v1510629186/blended_comps_v1.png"
+        lightbox_title=" "
+        lightbox_alt=" "  %}
+    </div>
+    <div>   
+    {% include lightbox.html
+        lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1510629537/blended_logos.png"
+        lightbox_small="https://res.cloudinary.com/xitricite/image/upload/c_scale,h_400/v1510629537/blended_logos.png"
+        lightbox_title=" "
+        lightbox_alt=" "  %}
+    </div>
+    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/OxQqQE/">&nbsp;</iframe></div>
 </div>
