@@ -5,6 +5,17 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    <ol class="flat-list" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/">Home</a></li>
+      {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        {% for crumb in crumbs offset: 1 %}
+          {% if forloop.last %}
+          / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+          {% else %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          {% endif %}
+        {% endfor %}
+    </ol>
   </header>
 
   <div class="post-content">

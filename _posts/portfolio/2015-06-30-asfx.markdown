@@ -1,11 +1,12 @@
 ---
 layout: post-cover
-title:  "Animation and Special Effects Compositing"
+title:  "Not Really Compositing"
 date:   2015-06-30 09:00:00 +0800
 categories: portfolio
 tags:
   - Uni Project
   - After Effects
+  - Motion Graphics
 
 featured-img: https://img.youtube.com/vi/MSKKUWb8V8w/mqdefault.jpg
 
@@ -16,4 +17,11 @@ embeded-url:
 
 ---
 
-SUPER CRINGE
+. . . . .
+A terriblly cheesy plot that ends horribly, starring a good sport: my friend.
+
+Not really...
+- Tracking: tracking markers were used on a green-screen, they were kinda hard to track because of the plate's low resolution compared to the size of the markers (printed too small oops).
+- Masking: there was a green screen with stuff around it garbaged masked out, but not much.
+
+Unit: Animation and Special Effects Compositing

@@ -1,0 +1,21 @@
+---
+layout: post-cover
+title:  "Food Infographic"
+date:   2017-11-16 06:55:36 +0800
+categories: portfolio
+tags: Infographic, Web Design, Graphic Design
+
+featured-img: https://s26.postimg.org/urp3o96gp/cow.jpg
+---
+
+Web layout of an infogrpahic, for a unit in Visualisation Technologies.
+
+###Process
+- Data sources picked from various sources as CSV's, or more horrifyingly just plain pictures. Tables weren't too bad... &#x1F602;
+- Converted into a JSON array (looks like [1, 2, 3]) with an [online tool](http://www.convertcsv.com/csv-to-json.htm)
+- Placed into a Codepen with [Chart.js](www.chartjs.org/docs/latest/) loaded from a CDN
+- Then
+- (Waypoints.js](imakewebthings.com/waypoints/) documenation was a bit too nice and simple, so I did struggle with that initially  &#x1F914; (had some issues on finding out how to bind scroll events...)
+
+
+<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/jayXzG/">&nbsp;</iframe></div>

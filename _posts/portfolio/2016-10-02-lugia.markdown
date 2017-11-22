@@ -4,7 +4,8 @@ title:  "Paint"
 date:   2016-10-20 09:00:00 +0800
 categories: portfolio
 tags:
-  - Other
+  - Illustration
+  - Personal Project
 
 featured-img: https://img.youtube.com/vi/SOKNOWCpRX4/mqdefault.jpg
 
@@ -15,6 +16,6 @@ embeded-url:
 
 ... ... ... . ...........
 
-{% include lightbox.html lightbox_large="https://orig00.deviantart.net/c762/f/2017/180/b/f/luaa__by_lugia_sea-dbefxn5.gif" lightbox_small="https://orig00.deviantart.net/d5f6/f/2017/180/2/7/luaa__by_lugia_sea-dbefxn5.gif" lightbox_title="http://fav.me/dbefxn5" lightbox_alt="http://fav.me/dbefxn5"  %} IDK 
+Just wanted to do a speedpaint video ahha. Lugia from Pok&#233;mon looks cool so... {% include lightbox.html lightbox_large="https://orig00.deviantart.net/c762/f/2017/180/b/f/luaa__by_lugia_sea-dbefxn5.gif" lightbox_small="https://orig00.deviantart.net/d5f6/f/2017/180/2/7/luaa__by_lugia_sea-dbefxn5.gif" lightbox_title="http://fav.me/dbefxn5" lightbox_alt="http://fav.me/dbefxn5"  %}
 
 ![result](http://sta.sh/01ercs96n4sx){:class="pure-img"}

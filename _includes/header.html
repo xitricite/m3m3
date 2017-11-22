@@ -1,9 +1,8 @@
-<header class="site-header" role="banner">
-
+<header class="site-header" role="banner" id="toTop">
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}"><img class="pure-img" src="{{"/assets/img/0main/logo_horizontal.svg" | relative_url}}" alt="{{site.title}}"></a>
+    <a class="site-title" href="{{ "/" | relative_url }}"><img class="pure-img" src="{{"/assets/img/0main/logo_horizontal.svg" | relative_url}}" alt="{{site.title}}"  itemprop="logo" ></a>
   
     {% if page_paths %}
       <nav class="site-nav">
@@ -24,5 +23,6 @@
         </div>
       </nav>
     {% endif %}
+    <meta http-equiv="Cache-control" content="max-age=2628000, public">
   </div>
 </header>

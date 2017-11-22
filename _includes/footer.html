@@ -3,32 +3,34 @@
     <div class="pure-g">
 
       <div class="pure-u-1 pure-u-md-3-4">
-        <ul class="flat-list fa-2x">
+        <ul class="flat-list fa-2x" itemscope itemprop="Person" itemtype="http://schema.org/Person">
+
+            <li><span itemprop="name"><a href="#toTop"><i class="fa fa-chevron-up"></i></a></span></li>
 
           {% if site.email %}
-            <li><a href="mailto:{{ site.email }}"><i class='fa fa-envelope'></i></a></li>
+            <li><a itemprop="email" href="mailto:{{ site.email }}"><i class='fa fa-envelope'></i></a></li>
           {% endif %}
 
           <li><span class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-rss"></i></a></span></li>
 
           {% if site.github_username %}
-          <li><a href="https://github.com/{{ site.github_username }}"><span class="fa fa-github"></span></a></li>
+          <li><a href="https://github.com/{{ site.github_username }}" itemprop="sameAs"><span class="fa fa-github"></span></a></li>
           {% endif %}
 
           {% if site.youtube_username %}
-          <li><a href="https://www.youtube.com/channel/{{ site.youtube_username }}"><span class="fa fa-youtube-play"></span></a></li>
+          <li><a href="https://www.youtube.com/channel/{{ site.youtube_username }}" itemprop="sameAs"><span class="fa fa-youtube-play"></span></a></li>
           {% endif %}
 
           {% if site.instagram_username %}
-          <li><a href="https://twitter.com/{{ site.twitter_username }}"><span class="fa fa-instagram"></span></a></li>
+          <li><a href="https://twitter.com/{{ site.twitter_username }}" itemprop="sameAs"><span class="fa fa-instagram"></span></a></li>
           {% endif %}
 
           {% if site.twitter_username %}
-          <li><a href="https://twitter.com/{{ site.instagram_username }}"><span class="fa fa-twitter"></span></a></li>
+          <li><a href="https://twitter.com/{{ site.instagram_username }}" itemprop="sameAs"><span class="fa fa-twitter"></span></a></li>
           {% endif %}
 
           {% if site.tumblr_username %}
-          <li><a href="https://tumblr.com/{{ site.tumblr_username }}"><span class="fa fa-tumblr"></span></a></li>
+          <li><a href="https://tumblr.com/{{ site.tumblr_username }}" itemprop="sameAs"><span class="fa fa-tumblr"></span></a></li>
           {% endif %}
           </ul>
         <p>Made with &#9829* by {{ site.author | escape }} © 2017<br>

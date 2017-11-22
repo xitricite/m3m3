@@ -12,7 +12,7 @@ javascript: wa-mediabox.min.js
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content" itemscope itemtype="http://schema.org/CreativeWork">
 
       <header class="post-header post-cover center"{% if page.featured-img %}
 		{% if page.featured-img contains 'http' %}
@@ -24,8 +24,7 @@ javascript: wa-mediabox.min.js
         <div class="wrapper">
           <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
           <div class="post-meta">
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            <span class="fa fa-clock-o"></span> {{ page.date | date: date_format }} {% if page.tags %}
+            <span class="fa fa-clock-o"></span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> {% if page.tags %}
 								<ul class="listed">
 									<li><span class="fa fa-tags"></span></li>
 									{% for item in page.tags %}

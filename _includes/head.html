@@ -10,14 +10,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{"/assets/img/0main/favicon.png" | relative_url}}">
-  
-  <meta name="description" content="{{site.description}}">
+
+  <meta name="description" content="{{site.description}}" itemprop="description">
   <meta name="keywords" content="{{site.keywords}}">
   <meta name="author" content="{{site.author}}">
-  
-  <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/pure-min.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/grids-responsive-min.css" | relative_url }}">
+
+  <!--<link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">-->
+  <!--<link rel="stylesheet" href="{{ "/assets/css/pure-min.css" | relative_url }}">-->
+  <!--<link rel="stylesheet" href="{{ "/assets/css/grids-responsive-min.css" | relative_url }}">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   {% if layout.css %}
     {% for stylesheet in layout.css %}

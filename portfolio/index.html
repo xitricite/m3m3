@@ -22,7 +22,7 @@ title: Portfolio
 			<h2>{{ post.title }}</h2>
 			{{ post.content | truncatewords: 4 }}
 			<div class="post-meta">
-				<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }} {% if post.tags %}
+				<span class="fa fa-clock-o"></span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> {% if post.tags %}
 				<ul class="listed">
 					<li><span class="fa fa-tags"></span></li>
 					{% for item in post.tags %}

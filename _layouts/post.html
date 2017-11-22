@@ -17,7 +17,7 @@ javascript: wa-mediabox.min.js
     {% endif %}
 
     {% if page.tags %}
-    <span class="fa fa-tags"></span>
+    <span class="fa fa-tags" itemprop="keywords" itemscope="" itemtype="http://schema.org/keywords"></span>
       <ul class="listed">
         {% for item in page.tags %}
           <li>{{ item }}</li>
@@ -25,6 +25,15 @@ javascript: wa-mediabox.min.js
       </ul>
     {% endif %}
   </div>
+  {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+  <a href="/">Home</a>
+  {% for crumb in crumbs offset: 1 %}
+    {% if forloop.last %}
+    / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+    {% else %}
+    / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+    {% endif %}
+  {% endfor %}
 </header>
 
 {{ content }}
