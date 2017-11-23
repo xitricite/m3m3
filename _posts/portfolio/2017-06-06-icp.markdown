@@ -7,10 +7,12 @@ tags:
   - Uni Project
   - Web Design
 
-featured-img: https://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
+featured-img: 
 
 ---
 
 ... ... ... ... ... ...
-    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/gxJbgw/">&nbsp;</iframe></div>
-</div>
+Won second place at...
+<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/gxJbgw/">&nbsp;</iframe></div>
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FInnovationCentralAU%2Fposts%2F976799122468198&width=500" width="500" height="500" style="border:none;overflow:scroll" scrolling="no" frameborder="0" allowTransparency="true"></iframe>

@@ -39,7 +39,7 @@ Ongoing project with: Aleks (Planning), Mason (Planning, Video), Josh (Developer
         lightbox_title=" "
         lightbox_alt=" "  %}
     </div>
-    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/OxQqQE/">&nbsp;</iframe></div>
-    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/qPXqwo/">&nbsp;</iframe></div>
-    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/mBmYgN/">&nbsp;</iframe></div>
+    <div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/OxQqQE/">&nbsp;</iframe></div>
+    <div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/qPXqwo/">&nbsp;</iframe></div>
+    <div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/mBmYgN/">&nbsp;</iframe></div>
 </div>
