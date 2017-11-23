@@ -1,0 +1,16 @@
+---
+layout: post-cover
+title:  "ICP 404 Page"
+date:   2017-06-06 09:00:00 +0800
+categories: portfolio
+tags:
+  - Uni Project
+  - Web Design
+
+featured-img: https://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
+
+---
+
+... ... ... ... ... ...
+    <div class="videoWrapper" style="height:60vh;"><iframe src="https://codepen.io/xitricite/full/gxJbgw/">&nbsp;</iframe></div>
+</div>

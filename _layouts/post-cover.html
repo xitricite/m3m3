@@ -23,6 +23,17 @@ javascript: wa-mediabox.min.js
 		{% endif %}>
         <div class="wrapper">
           <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
+          <ol class="flat-list" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/">Home</a></li>
+          {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+          {% for crumb in crumbs offset: 1 %}
+          {% if forloop.last %}
+          / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+          {% else %}
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          {% endif %}
+          {% endfor %}
+          </ol>
           <div class="post-meta">
             <span class="fa fa-clock-o"></span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> {% if page.tags %}
 								<ul class="listed">
@@ -39,7 +50,7 @@ javascript: wa-mediabox.min.js
         </div>
       </header>
 
-      <div class="post-content wrapper" itemprop="articleBody">
+      <div class="post-content-bg wrapper" itemprop="articleBody" itemscope itemtype="http://schema.org/BlogPosting">
 
       {{ content }}
 

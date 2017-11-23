@@ -4,6 +4,8 @@ title:  "Association of Malaysian Students"
 date:   2015-08-30 09:00:00 +0800
 categories: portfolio
 tags:
+  - Graphic Design
+  - Motion Graphics
   - Club
   - Photoshop
   - Illustrator

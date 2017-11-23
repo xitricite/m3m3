@@ -30,6 +30,8 @@ youtube_username: UCEaHE6GHVPDvB5os4VMXsgg
 reel_video_thumb: https://img.youtube.com/vi/CYktJ75Q_Uw/maxresdefault.jpg
 reel_video_url: https://www.youtube.com/embed/mcRhZQHjJHM
 
+google_analytics: UA-110055109-1
+
 # Build settings
 markdown: kramdown
 # theme: minima

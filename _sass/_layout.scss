@@ -7,7 +7,9 @@
     background: -webkit-gradient(linear, left top, left bottom, from(transparentize($text-color, 0.7)), to(transparentize($text-color, 1)));
     background: linear-gradient(to bottom, transparentize($text-color, 0.7) 0%, transparentize($text-color, 1) 100%);
     text-shadow: $shadow-text; // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
 }
 
 .site-title {
@@ -43,6 +45,10 @@
             margin-right: 20px;
         }
     }
+    .active {
+        color: $brand-color;
+        border-bottom: 2px solid $brand-color;
+    }
     @include media-query($on-palm) {
         position: fixed;
         top: 9px;
@@ -56,37 +62,52 @@
             z-index: 2;
             cursor: pointer;
         }
-        .bar1,
-        .bar2,
-        .bar3 {
+        .bars {
+            position: relative;
             display: block;
             width: 35px;
             height: 5px;
-            background-color: #333;
             margin: 6px 0;
             -webkit-transition: 0.4s;
             transition: 0.4s;
-            background-color: $brand-color-dark;
-        }
-        .nav-trigger:checked+nav-trigger .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-        .nav-trigger:checked+nav-trigger .bar2 {
-            opacity: 0;
-            &:before {
+            background-color: $side-color-light;
+            &:before,
+            &:after {
+                position: absolute;
+                display: block;
+                width: 35px;
+                height: 5px;
+                margin: 6px 0;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+                background-color: $side-color-light;
                 content: "";
-                border: 1px solid #a3adb3;
+            }
+            &:before {
+                top: 7px;
+            }
+
+            &:after {
+                top: 19px;
             }
         }
-        .nav-trigger:checked+nav-trigger .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
+        #nav-trigger:checked+label[for="nav-trigger"] .bars {
+            -webkit-transform: rotate(45deg) translate(9px, 6px);
+            transform: rotate(45deg) translate(9px, 6px);
+        }
+        #nav-trigger:checked+label[for="nav-trigger"] .bars:before {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        #nav-trigger:checked+label[for="nav-trigger"] .bars:after {
+            -webkit-transform: rotate(-95deg) translate(25px, 2px);
+            transform: rotate(-95deg) translate(25px, 2px);
         }
         input~.trigger {
             clear: both;
             display: none;
             opacity: 0;
+            transition: $transition;
         }
         input:checked~.trigger {
             opacity: 1;
@@ -101,6 +122,7 @@
             position: fixed;
             left: 0;
             top: $spacing-unit * 1.865;
+            transition: $transition;
             background-color: transparentize($text-color, 0.5);
         }
         .page-link {
@@ -143,7 +165,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit*2 0;
 }
 
 .page-heading {
@@ -184,11 +206,16 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    border-radius: $border-radius;
     svg {
         fill: $brand-color;
     }
 }
 
+.post-content-bg {
+    background: lighten($side-color-light, 3);
+    padding: $spacing-unit;
+}
 
 .spaceY {
     margin: $spacing-unit;
@@ -306,9 +333,13 @@
     text-align: center;
 }
 
-.btn {
+.btn,
+.btn:visited {
     font-size: $small-font-size;
-    color: currentcolor;
+    color: $side-color-light;
+    font-weight: bold;
+    background: darken($side-color, 4);
+    background: linear-gradient(135deg, $side-color 0%, darken($side-color, 3) 100%);
     text-decoration: none;
     letter-spacing: 0.1em;
     padding: 0.5em 1.2em;
@@ -316,12 +347,13 @@
     display: inline-block;
     cursor: pointer;
     border: 2px solid currentcolor;
-    border-radius: 3rem;
+    border-radius: $border-radius;
     -webkit-transition: $transition;
     transition: $transition;
     &:hover {
-        color: $side-color;
-        border: 2px solid $side-color;
+        color: darken($side-color, 4);
+        background: $side-color-light;
+        border: 2px solid transparent;
         text-decoration: none;
     }
 }
@@ -346,6 +378,7 @@
     content: '';
     position: absolute;
     left: 0;
+    bottom: 0;
     width: 100%;
     opacity: 0;
     -webkit-transition: all 0.1s cubic-bezier(0.2, 0.3, 0.8, 0.3);
@@ -386,7 +419,9 @@
 }
 
 
-.swiper-container, .swiper-wrapper, .swiper-slide {
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
     height: 70vh;
 }
 
@@ -457,7 +492,7 @@
     text-decoration: none;
     margin: 4px;
     padding: 1rem 2rem 0.2rem;
-    background: transparentize($brand-color-dark, 0.3);
+    background: lighten($side-color-light, 3); // background: transparentize($brand-color-dark, 0.3);
     -webkit-transition: $transition;
     transition: $transition;
     border-radius: $border-radius;
@@ -520,9 +555,9 @@
 .videoWrapper {
     position: relative;
     height: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25% !important;
     /* 16:9 */
-    padding-top: 25px;
+    padding-top: 25px !important;
     display: block;
 
     iframe {
@@ -538,21 +573,23 @@
 .pager {
     list-style: none;
     margin: 30px 0px;
-    
+
     li a {
         border-radius: $border-radius;
         transition: $transition;
-        background: $side-color-light;
+        color: $side-color-light;
+        background: darken($side-color,3);
         padding: 4px 18px;
         text-decoration: none;
         &:hover {
-            background: $brand-color-dark;
+            color: $brand-color-dark;
+            background: $brand-color;
         }
     }
     .previous {
-        float: right;
+        float: left;
     }
     .next {
-        float: left;
+        float: right;
     }
 }
