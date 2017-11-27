@@ -7,6 +7,7 @@ tags:
   - Club
   - Graphic Design
   - Illustrator
+
 featured-img: ewb/ewb_thumb.png
 
 image:

@@ -3,7 +3,10 @@ layout: post-cover
 title:  "Food Infographic"
 date:   2017-11-16 06:55:36 +0800
 categories: portfolio
-tags: Infographic, Web Design, Graphic Design
+tags:
+  - Infographic
+  - Web Design
+  - Graphic Design
 
 featured-img: https://s26.postimg.org/urp3o96gp/cow.jpg
 ---

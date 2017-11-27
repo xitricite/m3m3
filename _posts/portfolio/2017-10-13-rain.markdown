@@ -1,0 +1,41 @@
+---
+layout: post-cover
+title:  "Flat Illustrations"
+date:   2017-11-16 06:55:36 +0800
+categories: portfolio
+tags:
+  - Illustration
+
+featured-img:
+  - http://res.cloudinary.com/xitricite/image/upload/c\_scale,w\_600/v1511446392/RAIN\_DOG\_2x_jv71o8.png
+
+---
+
+###1. A Dog in Rain
+Good doggo with umbrellas: An illustrated image of a dog in the rain, top down perspective. Based off [this image](http://azertip.tumblr.com/post/137062165886/jacobgerms-happy-2016-everyone-stay-warm-out) which was found on Pinterest :b
+
+###2. Flatland
+
+###3. Rise
+Trying out [this brush set](https://blog.spoongraphics.co.uk/freebies/8-free-stipple-shading-brushes-for-adobe-illustrator)
+
+
+image:
+  - 'http://res.cloudinary.com/xitricite/image/upload/v1511446392/RAIN_DOG_2x_jv71o8.png'
+  - 'https://s26.postimg.org/lelzrjbll/land.png'
+  - 'https://s26.postimg.org/9e0jqt46x/rise.png'
+
+image-thumb:
+  - "http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1511446392/RAIN_DOG_2x_jv71o8.png"
+  - 'https://s26.postimg.org/lelzrjbll/land.png'
+  - 'https://s26.postimg.org/4s4figinp/rise.png'
+
+image-alt:
+  - An illustrated image of a dog in the rain, top down perspective
+  - Flatland cover design
+  - Trying out a brush set
+
+image-caption:
+  - An illustrated image of a dog in the rain, top down perspective
+  - Flatland cover design
+  - Trying out a brush set

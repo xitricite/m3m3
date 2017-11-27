@@ -24,65 +24,86 @@ javascript:
 				<h1>Hello! <span style="font-size: 37%;" class="hoverable" data-hover="(´• ω •`)ﾉ" data-active="ᕕ( ᐛ )ᕗ"><span>(´☆▽☆`)ﾉ</span></span></h1>
 				<p>I'm Casey Lim!</p>
 				<p>Digital content creator, &amp; animator from Perth</p>
-				<a href="/portfolio" class="btn">See something cool &rarr;</a>
+				<a href="/portfolio" class="btn">See something cool (¬‿¬ ) &rarr;</a>&emsp;<a class="btn" href="/about/#contact">Get in touch?</a>
 			</div>
 			<div class="pure-u-1-3 pure-u-md-1-6">
 				<img class="pure-img" src="{{ "/assets/img/0main/cat.png" | relative_url }}">
 			</div>
 		</div>
 
-		<div class="center glow">
-			<h3>&darr;</h3>
-		</div>
+		<!--<div class="center glow">-->
+		<!--	<h3>&darr;</h3>-->
+		<!--</div>-->
 
-		<div class="wrapper">
-			<div class="center glow">
-				<h2>Portfolio &#x1f4d6;</h2>
-			</div>
-			<!-- Swiper Slider -->
-			<div class="swiper-container wave-mask">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide fa-2x">
-						<a class="center post-cover" style="background-image: url('{{ site.reel_video_thumb }}');" data-swiper-parallax="-300" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name" data-iframe="true" data-width="853" data-height="400">
-							<div data-swiper-parallax="300">
-								<h3 data-swiper-parallax="200">Latest Works</h3>
-								<p data-swiper-parallax="100">Creating is fun 🤔</p>
-							</div>
-						</a>
-					</div>
-					{% for post in site.categories.portfolio limit:4 %}
-					<div class="swiper-slide">
-						<a class="post-cover center" itemscope itemtype="http://schema.org/CreativeWork" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
-						 {% endif %} {% endif %} href="{{ post.url }}">
-							<div data-swiper-parallax="-400">
-								<h2 data-swiper-parallax="200">{{ post.title }}</h2>
-								<p data-swiper-parallax="400">{{ post.content | truncatewords: 4 }}</p>
-								<div data-swiper-parallax="600" class="post-meta">
-									<span class="fa fa-clock-o"></span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-									{% if post.tags %}
-									<ul class="listed">
-										<li><span class="fa fa-tags"></span></li>
-										{% for item in post.tags %}
-										<li>{{ item }}</li>
-										{% endfor %}
-									</ul>
-									{% endif %}
+		<div class="wrapper pure-g">
+			<div class="pure-u-1 pure-u-md-3-4 spacing-top">
+				<h2 class="glow">Latest Works &#127793;</h2>
+				<!-- Swiper Slider -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide fa-2x">
+							<a class="center post-cover" style="background-image: url('{{ site.reel_video_thumb }}');" data-swiper-parallax="-300" href="{{ site.reel_video_url }}" data-mediabox="my-gallery-name" data-iframe="true" data-width="853" data-height="400">
+								<div data-swiper-parallax="300">
+									<h3 data-swiper-parallax="200">Reel</h3>
+									<p data-swiper-parallax="100">🤔</p>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
+						{% for post in site.categories.portfolio limit:4 %}
+						<div class="swiper-slide">
+							<a class="post-cover center" itemscope itemtype="http://schema.org/CreativeWork" {% if post.featured-img %} {% if post.featured-img contains 'http' %} style="background-image: url('{{ post.featured-img }}');" {% else %} style="background-image: url('{{ post.featured-img | prepend: '/assets/img/' | relative_url }}');"
+							 {% endif %} {% endif %} href="{{ post.url }}">
+								<div data-swiper-parallax="-400">
+									<h2 data-swiper-parallax="200">{{ post.title }}</h2>
+									<p data-swiper-parallax="400">{{ post.content | truncatewords: 4 }}</p>
+									<div data-swiper-parallax="600" class="post-meta">
+										<span class="fa fa-clock-o"></span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+										{% if post.tags %}
+										<ul class="listed">
+											<li><span class="fa fa-tags"></span></li>
+											{% for item in post.tags %}
+											<li>{{ item }}</li>
+											{% endfor %}
+										</ul>
+										{% endif %}
+									</div>
+								</div>
+							</a>
+						</div>
+						{% endfor %}
+						<div class="swiper-slide">
+							<a href="/portfolio" class="center" data-swiper-parallax="-300">
+								<div data-swiper-parallax="300">
+									<h3 data-swiper-parallax="200">View More &rarr;</h3>
+									<span class="hoverable fa-2x" data-hover="|д･)" data-active="|▽//)"><span>|ω･)ﾉ	</span></span>
+								</div>
+							</a>
+						</div>
 					</div>
-					{% endfor %}
-					<div class="swiper-slide">
-						<a href="/portfolio" class="center" data-swiper-parallax="-300">
-							<div data-swiper-parallax="300">
-								<h3 data-swiper-parallax="200">View More &rarr;</h3>
-								<span class="hoverable fa-2x" data-hover="|д･)" data-active="|▽//)"><span>|ω･)ﾉ	</span></span>
-							</div>
-						</a>
-					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
 				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-4 spacing-top">
+				<h2 class="glow">Blog &#x1f4d6;</h2>
+				<div class="post-list">
+					{% for post in site.categories.blog %}
+					<a class="plain" href="{{ post.url }}">
+						<h2>{{ post.title }}</h2>
+						{{ post.content | truncatewords: 4 }}
+						<div class="post-meta">
+							<span class="fa fa-clock-o"></span> {{ post.date | date_to_string }} {% if post.tags %}
+							<span class="fa fa-tags"></span>
+							<ul class="listed">
+								{% for item in post.tags %}
+								<li>{{ item }}</li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</div>
+					</a>
+					{% endfor %}
+				</div>
 			</div>
 			<div class="spaceY"></div>
 
@@ -111,11 +132,6 @@ javascript:
 			<!--</ul>-->
 			<!--<div class="spaceY"></div>-->
 			
-			<div class="spaceY"></div>
-			<div class="pure-u-1 pure-g center">
-				<a class="btn" href="/portfolio">View more? (¬‿¬ )</a>&emsp;<a class="btn" href="/about/#contact">Get in touch?</a>
-			</div>
-
 		</div>
 
 	</main>

@@ -9,7 +9,8 @@ tags:
   - Augmented Reality
   - Group Project
 
-featured-img: csf/title.png
+featured-img:
+  - csf/title.png
 
 image:
   - csf/title.png
@@ -21,11 +22,11 @@ image-thumb:
 
 image-alt:
   - alt
-  - 
+  - a
 
 image-caption:
   - alt
-  - 
+  - a
 
 
 ---

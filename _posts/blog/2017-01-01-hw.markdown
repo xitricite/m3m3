@@ -1,11 +1,39 @@
 ---
-layout: post
-title:  "Hello World"
+layout: post-cover
+title:  "Hello World!"
 date:   2017-01-01 06:55:36 +0800
 categories: blog
-tags: none
+tags:
+  - Process
+  - Development
+
+image:
+  - https://postimg.org/image/bxucfevzp/
+  - https://postimg.org/image/ia9hp8z1x/
+  - https://postimg.org/image/feweidv1x/
+
+image-thumb:
+  - https://postimg.org/image/bxucfevzp/
+  - https://postimg.org/image/ia9hp8z1x/
+  - https://postimg.org/image/feweidv1x/
+
+image-alt:
+  - wireframe_about
+  - wireframe_landing
+  - wireframe_work
+
+
+image-caption:
+  - 
+  - 
+  - 
+
 ---
 
 I've given up on Jekyll and Liquid and all that. This website was such a challenge and such a leap from wordpress PHP devleopment.
 
-This website is best viewed on Chrome ~Version 61.0.3163.100 (Official Build) (64-bit)~.
+This website is best viewed on Chrome ~Version 61.0.3163.100 (Official Build) (64-bit)~ as of build date :b.
+
+
+##Wireframe Sketches
+I thought to intergrate the contact page here and have #ID link just jump to that section (like clicking on Wikipedia’s index links). Having to take a self portrait seems a bit troublesome, so #2 has a placeholder image of cartoon trenchcoat cats. Love it. #4 has a massive silouette of WA in the background, though it may get a bit too distracting?
