@@ -13,21 +13,46 @@ https://blog.webjeda.com/jekyll-categories/
 {% for category in site.categories %} {% capture category_name %}{{ category | first }}{% endcapture %}
 <div class="post-content" id="#{{ category_name | capitalize }}">
     <h2 class="category-head">{{ category_name }}</h2>
-
-    <div class="photoGrid">
-    {% for post in site.categories[category_name] %}
-    <a class="plain" href="{{ site.baseurl }}{{ post.url }}">
-        <h4>{{post.title}}</h4>
-        {{ post.content | truncatewords: 4 }} {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <div class="post-meta">
-            <span class="fa fa-clock-o"></span> {{ post.date | date: date_format | date_to_string }} {% if post.tags %}
-            <ul class="listed">
-                <span class="fa fa-tags"></span> {% for item in post.tags %}
+    <table class="archive-table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th><span class="fa fa-clock-o"></span>&nbsp;Date</th>
+            <th><span class="fa fa-tags"></span>&nbsp;Tags</th>
+            <th><span class="fa fa-link"></span>&nbsp;Link</th>
+        </tr>
+    </thead>
+        <tbody>
+        {% for post in site.categories[category_name] %}
+            <tr>
+                <td><h4>{{post.title}}</h4></td>
+                <td>{{ post.content | truncatewords: 4 }}</td>
+                <td>{{ post.date | date_to_string }}</td>
+                <td><ul class="listed">{% if post.tags %}
+                {% for item in post.tags %}
                 <li>{{ item }}</li>
-                {% endfor %} {% endif %}
-        </div>
-    </a>
-    {% endfor %}
-    </div>
+                {% endfor %} {% endif %}</ul></td>
+                <td><a class="btn" href="{{ site.baseurl }}{{ post.url }}">View</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
 </div>
 {% endfor %}
+
+{% comment %}{% raw %}
+<!--{% for post in site.categories[category_name] %}-->
+<!--<a class="plain" href="{{ site.baseurl }}{{ post.url }}">-->
+<!--    <h4>{{post.title}}</h4>-->
+<!--    {{ post.content | truncatewords: 4 }} {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}-->
+<!--    <div class="post-meta">-->
+<!--        <span class="fa fa-clock-o"></span> {{ post.date | date: date_format | date_to_string }} {% if post.tags %}-->
+<!--        <ul class="listed">-->
+<!--            <span class="fa fa-tags"></span> {% for item in post.tags %}-->
+<!--            <li>{{ item }}</li>-->
+<!--            {% endfor %} {% endif %}-->
+<!--    </div>-->
+<!--</a>-->
+<!--{% endfor %}-->
+{% endraw %}{% endcomment %}

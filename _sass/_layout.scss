@@ -609,3 +609,77 @@ a.post-cover:hover {
         float: right;
     }
 }
+
+// TABLE
+table,
+.pure-table,
+.pure-table td,
+.pure-table th,
+tr,
+td {
+    border: none;
+    border: 1px solid transparent;
+}
+
+table {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pure-table thead,
+.pure-table tr {
+    background-color: transparentize($brand-color, 0.4);
+}
+
+.pure-table tr:nth-child(even) {
+    background-color: transparentize(darken($brand-color,3), 0.4);
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+@include media-query($on-laptop) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        position: relative;
+    }
+
+    .archive-table {
+        td:before {
+            display: block;
+            color: lighten($side-color,3);
+            font-family: FontAwesome;
+        }
+        td:nth-of-type(1):before {
+            content: "Title";
+        }
+        td:nth-of-type(2):before {
+            content: "Description";
+        }
+        td:nth-of-type(3):before {
+            content: "\f017 Date";
+        }
+        td:nth-of-type(4):before {
+            content: "\f02c Tags";
+        }
+    }
+}

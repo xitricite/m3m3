@@ -26,7 +26,7 @@ image:
   - 'https://s26.postimg.org/9e0jqt46x/rise.png'
 
 image-thumb:
-  - "http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1511446392/RAIN_DOG_2x_jv71o8.png"
+  - 'http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1511446392/RAIN_DOG_2x_jv71o8.png'
   - 'https://s26.postimg.org/lelzrjbll/land.png'
   - 'https://s26.postimg.org/4s4figinp/rise.png'
 
