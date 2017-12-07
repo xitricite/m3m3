@@ -11,14 +11,17 @@ tags:
 featured-img: https://s26.postimg.org/urp3o96gp/cow.jpg
 ---
 
-Web layout of an infogrpahic, for a unit in Visualisation Technologies.
+Interactive web layout of an infographic about nutrition, for a unit in Visualisation Technologies.
 
-###Process
+<a class="btn" href="https://codepen.io/xitricite/full/jayXzG/">View live</a>
+
+##Process
 - Data sources picked from various sources as CSV's, or more horrifyingly just plain pictures. Tables weren't too bad... &#x1F602;
 - Converted into a JSON array (looks like [1, 2, 3]) with an [online tool](http://www.convertcsv.com/csv-to-json.htm)
 - Placed into a Codepen with [Chart.js](www.chartjs.org/docs/latest/) loaded from a CDN
 - Then
-- (Waypoints.js](imakewebthings.com/waypoints/) documenation was a bit too nice and simple, so I did struggle with that initially  &#x1F914; (had some issues on finding out how to bind scroll events...)
+- [Waypoints.js](imakewebthings.com/waypoints/) documenation was a bit too nice and simple, so I did struggle with that initially  &#x1F914; (had some issues on finding out how to bind scroll events...)
 
+{% include lightbox.html lightbox_large="http://res.cloudinary.com/xitricite/image/upload/v1512661324/fooddatavis_q2siic.png" lightbox_small="http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1512661324/fooddatavis_q2siic.png" lightbox_title="url" lightbox_alt="url"  %}
 
-<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/jayXzG/">&nbsp;</iframe></div>
+<!--<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/jayXzG/">&nbsp;</iframe></div>-->

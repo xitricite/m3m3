@@ -11,31 +11,26 @@ featured-img:
 
 ---
 
-###1. A Dog in Rain
-Good doggo with umbrellas: An illustrated image of a dog in the rain, top down perspective. Based off [this image](http://azertip.tumblr.com/post/137062165886/jacobgerms-happy-2016-everyone-stay-warm-out) which was found on Pinterest :b
+A set of illustrations in a flat art style.
 
-###2. Flatland
 
-###3. Rise
+## A Dog in Rain
+ - Good doggo with umbrellas: An illustrated image of a dog in the rain, top down perspective.
+ - Based off [this image](http://azertip.tumblr.com/post/137062165886/jacobgerms-happy-2016-everyone-stay-warm-out) which was found on Pinterest :b
+
+{% include lightbox.html lightbox_large="http://res.cloudinary.com/xitricite/image/upload/v1511446392/RAIN_DOG_2x_jv71o8.png" lightbox_small="http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1511446392/RAIN_DOG_2x_jv71o8.png" lightbox_title="An illustrated image of a dog in the rain, top down perspective" lightbox_alt="An illustrated image of a dog in the rain, top down perspective" %}
+
+----
+
+## Flatland
+
+{% include lightbox.html lightbox_large="https://s26.postimg.org/lelzrjbll/land.png" lightbox_small="https://s26.postimg.org/lelzrjbll/land.png" lightbox_title="Flatland cover design" lightbox_alt="Flatland cover design"  %}
+
+----
+
+## Rise
 Trying out [this brush set](https://blog.spoongraphics.co.uk/freebies/8-free-stipple-shading-brushes-for-adobe-illustrator)
 
+{% include lightbox.html lightbox_large="https://s26.postimg.org/9e0jqt46x/rise.png" lightbox_small="https://s26.postimg.org/4s4figinp/rise.png" lightbox_title="Trying out a brush set" lightbox_alt="Trying out a brush set"  %}
 
-image:
-  - 'http://res.cloudinary.com/xitricite/image/upload/v1511446392/RAIN_DOG_2x_jv71o8.png'
-  - 'https://s26.postimg.org/lelzrjbll/land.png'
-  - 'https://s26.postimg.org/9e0jqt46x/rise.png'
-
-image-thumb:
-  - 'http://res.cloudinary.com/xitricite/image/upload/c_scale,w_600/v1511446392/RAIN_DOG_2x_jv71o8.png'
-  - 'https://s26.postimg.org/lelzrjbll/land.png'
-  - 'https://s26.postimg.org/4s4figinp/rise.png'
-
-image-alt:
-  - An illustrated image of a dog in the rain, top down perspective
-  - Flatland cover design
-  - Trying out a brush set
-
-image-caption:
-  - An illustrated image of a dog in the rain, top down perspective
-  - Flatland cover design
-  - Trying out a brush set
+[Some Images hosted on Postimg.org](https://postimg.org)

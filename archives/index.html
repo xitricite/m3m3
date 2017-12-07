@@ -29,8 +29,8 @@ https://blog.webjeda.com/jekyll-categories/
                 <td><h4>{{post.title}}</h4></td>
                 <td>{{ post.content | truncatewords: 4 }}</td>
                 <td>{{ post.date | date_to_string }}</td>
-                <td><ul class="listed">{% if post.tags %}
-                {% for item in post.tags %}
+                <td><ul class="listed">{% assign sorted_tags = post.tags | sort %}{% if sorted_tags %}
+                {% for item in sorted_tags %}
                 <li>{{ item }}</li>
                 {% endfor %} {% endif %}</ul></td>
                 <td><a class="btn" href="{{ site.baseurl }}{{ post.url }}">View</a></td>

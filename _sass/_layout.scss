@@ -344,7 +344,6 @@
     color: $side-color-light;
     font-weight: bold;
     background: darken($side-color, 4);
-    background: linear-gradient(135deg, $side-color 0%, darken($side-color, 3) 100%);
     text-decoration: none;
     letter-spacing: 0.1em;
     padding: 0.5em 1.2em;
@@ -355,10 +354,13 @@
     border-radius: $border-radius;
     -webkit-transition: $transition;
     transition: $transition;
+    &:visited, &:active {
+        background: darken($brand-color,3);
+    }
     &:hover {
         color: darken($side-color, 4);
         background: $side-color-light;
-        border: 2px solid transparent;
+        border: 2px solid darken($side-color, 4);
         text-decoration: none;
     }
 }
@@ -635,9 +637,9 @@ table {
     background-color: transparentize(darken($brand-color,3), 0.4);
 }
 
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25B4\25BE" 
-}
+// table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+//     content: " \25B4\25BE" 
+// }
 
 @include media-query($on-laptop) {
 

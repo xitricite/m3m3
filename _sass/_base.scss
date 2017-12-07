@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm
   margin-bottom: $spacing-unit / 2;
 }
 
+hr {
+  margin: $spacing-unit 0 $spacing-unit*2;
+  border: 2px solid lighten($background-color,2);
+  border-radius: $border-radius;
+}
+
 
 /**
  * Basic styling
@@ -66,6 +72,7 @@ html {
 main img {
   width: 100%;
   vertical-align: middle;
+  border-radius: $border-radius;
 }
 
 
@@ -359,16 +366,17 @@ table {
     border-radius: 50%;
     width: 64px;
     height: 64px;
-    background-color: $side-color-light;
+    // background-color: $side-color-light;
+    border: 2px outset $side-color;
     background-image: url('/assets/img/0main/favicon.png');
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
     // border: 6px solid transparent;
     // border-top: 6px solid $side-color;
-    box-shadow: 2px 2px 50px 5px $side-color-light, 2px 2px 200px $side-color-light, 4px 4px 300px 50px $side-color;
-    -webkit-animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
-            animation: rotating 1.2s infinite cubic-bezier(0.7, 0.15, 0.1, 0.8);
+    // box-shadow: 2px 2px 50px 5px $side-color-light, 2px 2px 200px $side-color-light, 4px 4px 300px 50px $side-color;
+    -webkit-animation: rotating 1.2s steps(6, end) infinite;
+            animation: rotating 1.2s steps(6, end) infinite;
   }
 }
 
