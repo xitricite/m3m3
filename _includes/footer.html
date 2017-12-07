@@ -17,6 +17,10 @@
           <li><a href="https://github.com/{{ site.github_username }}" itemprop="sameAs"><span class="fa fa-github"></span></a></li>
           {% endif %}
 
+          {% if site.linkedin_username %}
+          <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" itemprop="sameAs"><span class="fa fa-linkedin"></span></a></li>
+          {% endif %}
+
           {% if site.youtube_username %}
           <li><a href="https://www.youtube.com/channel/{{ site.youtube_username }}" itemprop="sameAs"><span class="fa fa-youtube-play"></span></a></li>
           {% endif %}
@@ -33,7 +37,7 @@
           <li><a href="https://tumblr.com/{{ site.tumblr_username }}" itemprop="sameAs"><span class="fa fa-tumblr"></span></a></li>
           {% endif %}
           </ul>
-        <p>&lt; &gt; with &#9829* by {{ site.author | escape }} © 2017<br>
+        <p>&lt; Made &gt; with &#9829* by {{ site.author | escape }} © 2017<br>
         <small>*Hosted with Jekyll on <a href="https://github.com/">GitHub</a></small><br>
           {{ site.description | escape }}</p>
       </div>
