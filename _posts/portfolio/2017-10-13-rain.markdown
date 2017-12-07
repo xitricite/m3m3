@@ -31,6 +31,6 @@ A set of illustrations in a flat art style.
 ## Rise
 Trying out [this brush set](https://blog.spoongraphics.co.uk/freebies/8-free-stipple-shading-brushes-for-adobe-illustrator)
 
-{% include lightbox.html lightbox_large="https://s26.postimg.org/9e0jqt46x/rise.png" lightbox_small="https://s26.postimg.org/4s4figinp/rise.png" lightbox_title="Trying out a brush set" lightbox_alt="Trying out a brush set"  %}
+{% include lightbox.html lightbox_large="https://s26.postimg.org/9e0jqt46x/rise.png" lightbox_small="https://s26.postimg.org/4s4figinp/rise.png" lightbox_title="Trying out a brush set" lightbox_alt="Trying out a brush set" %}
 
 [Some Images hosted on Postimg.org](https://postimg.org)

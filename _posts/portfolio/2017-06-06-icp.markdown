@@ -11,8 +11,11 @@ featured-img:
 
 ---
 
-... ... ... ... ... ...
-Won second place at...
-<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/gxJbgw/">&nbsp;</iframe></div>
+404 page design for the Cisco Innovation Central Perth. Won second place at the competition.
+<!--<div class="videoWrapper"><iframe src="https://codepen.io/xitricite/full/gxJbgw/">&nbsp;</iframe></div>-->
+
+[View Codepen Site](https://codepen.io/xitricite/full/gxJbgw/){:.btn}
+
+{% include lightbox.html lightbox_large="https://res.cloudinary.com/xitricite/image/upload/v1512663884/icp404.png" lightbox_small="http://res.cloudinary.com/xitricite/image/upload/c_scale,w_1600/v1512663884/icp404.png" lightbox_title="" lightbox_alt="" %}
 
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FInnovationCentralAU%2Fposts%2F976799122468198&width=500" width="500" height="500" style="border:none;overflow:scroll" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
