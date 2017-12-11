@@ -47,6 +47,11 @@ html {
     font-feature-settings: "kern" 1;
     -webkit-font-kerning: normal;
             font-kerning: normal;
+    -ms-word-break: break-all;
+     word-break: break-all;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,11 +253,11 @@ pre {
  * Icons
  */
 
-.icon>svg {
+.icon, svg {
   display: inline-block;
   vertical-align: middle;
   path {
-    fill: $side-color;
+    fill: $side-color-light;
   }
 }
 
