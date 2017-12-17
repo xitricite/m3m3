@@ -37,6 +37,7 @@ google_analytics: UA-110055109-1
 markdown: kramdown
 # theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
 
 # Exclude from processing.
