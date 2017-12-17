@@ -20,7 +20,10 @@ email: casey.x.lim@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome! My hobbies include 🎨 making stuff, 📸 looking at stuff, 🎥. and recording stuff. This is my personal blog and folio.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://xitricite.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+port: $PORT
+
 instagram_username:  xitricite
 tumblr_username:  xitricite
 twitter_username: xitricite
@@ -32,6 +35,9 @@ reel_video_thumb: https://img.youtube.com/vi/CYktJ75Q_Uw/maxresdefault.jpg
 reel_video_url: https://www.youtube.com/embed/mcRhZQHjJHM
 
 google_analytics: UA-110055109-1
+
+timezone: '+0800'
+permalink: /blog/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
