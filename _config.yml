@@ -37,7 +37,7 @@ reel_video_url: https://www.youtube.com/embed/mcRhZQHjJHM
 google_analytics: UA-110055109-1
 
 timezone: '+0800'
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:title
 
 # Build settings
 markdown: kramdown
