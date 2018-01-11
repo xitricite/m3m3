@@ -2,47 +2,42 @@
   <div class="wrapper">
     <div class="pure-g">
 
-      <div class="pure-u-1 pure-u-md-3-4">
-        <ul class="flat-list fa-2x" itemscope itemprop="Person" itemtype="http://schema.org/Person">
+      <div class="pure-u-1 centerText">
+        <p></p>
+        <pre><a href="#toTop" title="to-top"><i class="fa fa-chevron-up fa-2x"></i> &lt; Made &gt; with &#9829* by {{ site.author | escape }} © 2017</a></pre>
+      </div> 
 
-            <li><span itemprop="name"><a href="#toTop"><i class="fa fa-chevron-up"></i></a></span></li>
-
+      <div class="pure-u-3-4">
+              <ul class="flat-list fa-2x" itemscope itemprop="Person" itemtype="http://schema.org/Person">
           {% if site.email %}
-            <li><a itemprop="email" href="mailto:{{ site.email }}"><i class='fa fa-envelope'></i></a></li>
+          <li><a itemprop="email" href="mailto:{{ site.email }}"><i class='fa fa-envelope'></i></a></li>
           {% endif %}
-
           <li><span class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-rss"></i></a></span></li>
-
           {% if site.github_username %}
           <li><a href="https://github.com/{{ site.github_username }}" itemprop="sameAs"><span class="fa fa-github"></span></a></li>
           {% endif %}
-
           {% if site.linkedin_username %}
           <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" itemprop="sameAs"><span class="fa fa-linkedin"></span></a></li>
           {% endif %}
-
           {% if site.youtube_username %}
           <li><a href="https://www.youtube.com/channel/{{ site.youtube_username }}" itemprop="sameAs"><span class="fa fa-youtube-play"></span></a></li>
           {% endif %}
-
           {% if site.instagram_username %}
           <li><a href="https://twitter.com/{{ site.twitter_username }}" itemprop="sameAs"><span class="fa fa-instagram"></span></a></li>
           {% endif %}
-
           {% if site.twitter_username %}
           <li><a href="https://twitter.com/{{ site.instagram_username }}" itemprop="sameAs"><span class="fa fa-twitter"></span></a></li>
           {% endif %}
-
           {% if site.tumblr_username %}
           <li><a href="https://tumblr.com/{{ site.tumblr_username }}" itemprop="sameAs"><span class="fa fa-tumblr"></span></a></li>
           {% endif %}
-          </ul>
-        <p>&lt; Made &gt; with &#9829* by {{ site.author | escape }} © 2017<br>
-        <small>*Hosted with Jekyll on <a href="https://github.com/">GitHub</a></small><br>
-          {{ site.description | escape }}</p>
+        </ul>
+
+      <p><small>*Coded with <a href="https://jekyllrb.com">Jekyll</a>, hosted on <a href="https://github.com/xitricite/xitric.github.io">GitHub</a></small><br>
+          {{ site.description | escape }} <a href="{{'/about' | relative_url}}">Read more &rarr;</a></p>
       </div>
 
-      <div class="pure-u-1 pure-u-md-1-4">
+      <div class="pure-u-1-4">
         <img src="{{'/assets/img/0main/croc.png' | relative_url}}" alt="Crocodile Or Aligator?" class="pure-img">
       </div>
 

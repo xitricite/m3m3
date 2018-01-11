@@ -47,8 +47,8 @@ html {
     font-feature-settings: "kern" 1;
     -webkit-font-kerning: normal;
             font-kerning: normal;
-    -ms-word-break: break-all;
-     word-break: break-all;
+    -ms-word-break: break-word;
+     word-break: break-word;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
           hyphens: auto;
@@ -199,13 +199,12 @@ blockquote {
 
 pre, code {
   font-size: 0.9375em;
-  border: 1px solid $side-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  font-family: 'Source Code Pro', Consolas, Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, Andale Mono, monospace;
 }
 
 code {
   padding: 1px 5px;
+  background-color: transparentize($brand-color-dark, 0.4);
 }
 
 pre {
