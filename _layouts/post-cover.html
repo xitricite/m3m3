@@ -14,7 +14,7 @@ javascript: wa-mediabox.min.js
 
     <main class="page-content" aria-label="Content" itemscope itemtype="http://schema.org/CreativeWork">
 
-      <header class="post-header post-cover center"{% if page.featured-img %}
+      <header class="post-header post-cover shiv center"{% if page.featured-img %}
 		{% if page.featured-img contains '://' %}
 			style="background-image: url('{{ page.featured-img }}');"
 			{% else %}
@@ -22,7 +22,7 @@ javascript: wa-mediabox.min.js
 		{% endif %}
 		{% endif %}>
         <div class="wrapper">
-          <h1 class="post-title" itemprop="name headline">{{ page.title | escape | capitalize }}</h1>
+          <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
           <ol class="flat-list" itemscope itemtype="http://schema.org/BreadcrumbList">
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/">Home</a></li>
           {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
@@ -59,9 +59,12 @@ javascript: wa-mediabox.min.js
         {% for image in page.image %}
           <div>
             <figure>
-              {% assign link = page.image %}
-              {% if link contains '://' %} <a href="{{ page.image[forloop.index0] }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% else %} <a href="{{ page.image[forloop.index0] | prepend: "assets/img/" | relative_url }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}"> {% endif %}
-                {% if page.image contains 'http' %} <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}"> {% else %} <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}"> {% endif %}&nbsp;</a>
+              {% if page.image contains '://' or page.image contains 'http' %} <a href="{{ page.image[forloop.index0] }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}">
+              {% else %} <a href="{{ page.image[forloop.index0] | prepend: "assets/img/" | relative_url }}" data-mediabox="{{ page.title | escape | slugize }}" data-title="{{ page.image-alt[forloop.index0] }}">
+              {% endif %}
+              {% if page.image contains '://' or page.image contains 'http' %} <img src="{{ page.image-thumb[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}">
+              {% else %} <img src="{{ page.image-thumb[forloop.index0] | prepend: "assets/img/" | relative_url }}" alt="{{ page.image-alt[forloop.index0] }}">
+              {% endif %}&nbsp;</a>
           </figure>
           <figcaption>{{page.image-caption[forloop.index0]}}</figcaption>
           </div>

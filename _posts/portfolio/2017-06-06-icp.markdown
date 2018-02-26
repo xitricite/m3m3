@@ -7,7 +7,7 @@ tags:
   - Uni Project
   - Web Design
 
-featured-img: 
+featured-img: http://res.cloudinary.com/xitricite/image/upload/c_scale,w_1600/v1512663884/icp404.png
 
 ---
 

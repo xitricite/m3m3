@@ -1,17 +1,32 @@
 ---
 layout: post-cover
-title:  "Human Computer Interfaces"
+title:  "Uni App Redesign"
 date:   2016-10-30 09:00:00 +0800
 categories: portfolio
 tags:
   - Uni Project
   - User Experience
 
-featured-img: 
-embeded-url:
+featured-img: 'https://lh3.googleusercontent.com/eSa-OlNsKXa8OOdk_bWpl0g5Gg8iZbcIcIuXZBKrCXm6wbY8Bf3t8HYgkvtUxTFeSRi04H_d-nRpfKVNmO_xj2FfQ05UWBd7viNxoh7ZYqcmFu_kszh990N6hTDdF-Pm9lIO6Mz5eI44cvG6cAFUCsf32UWTG-xaf-Jw2kwt3ho501pEgh-I9nny6_xo4N-XCV_bMS9i4Ng7TsDCgsWrK34kZFoZXivATjPLBtjZ8FnIF1U7WvMolG6g6HFo-JsiPez7cuSYQpNqd9oVzlud-jQO9rbQTBN64B7fYaAWfIMC-KPHvwnDIwFfV-XXBUiA6zL5WwBBrP1da2OInD4Ik1cIqPMxQNYJdjNf79W5arUoOb80mwNfLAXZ7xvYb_FhXpXlHwqQxCr4T5Eb7UcwMy4JUzl6gxApg_qlE4bHrIC203gOPztVCmXuaWEifkbzOtV5QzgZI0Je0ayJCWB3rEB9uFeR3JGTJwy7hcTN3B2JZ3ZPM4RjJI6xt58u27S3rf_fr8XFwtIVCIcWvAnUsFRti5fF7Ou7uTwDk5XPXJzde0yMwb5NcbRD4gihqN_4NlaeYqveL-n2McVztcWDhfWpNthSb8OEtE0O1Qs=w522-h962-no'
 
 ---
 
-.. .. .. .. .. ..
-<span class="fa-2x">[<span class="fa fa-file-code-o"></span> site](https://projects.invisionapp.com/share/VP9807C32#/screens/202820666)</span>
-<div class="videoWrapper"><iframe width="662" height="1030" src="https://invis.io/JXB34PX6R" frameborder="0" allowfullscreen>&nbsp;</iframe></div>
+Prototype app to resolve a common student issue. Human Computer Interfaces.
+
+### Process
+- Conducted user study in library. The main **pain points** picked up were:
+    - current phone app is lacking compared to web-app (missing functionalities);
+    - student mails are not checked as often as needed (intergration with app?);
+    - needs to keep up with Blackboard announcements without hassle (web-app required a log-in to Oasis > Blackboard > Unit just to check schedules/assignments)
+- Sketched wireframes, then made *nicer* prototype in Ai.
+- Brought into Invision for testing.
+
+**Tools:** Illustrator, Invision.
+
+**View:**
+
+<span class="fa-2x">[<span class="fa fa-file-code-o"></span> Invision Prototype](https://projects.invisionapp.com/share/VP9807C32#/screens/202820666)</span>
+
+{% include lightbox.html lightbox_large="https://lh3.googleusercontent.com/eSa-OlNsKXa8OOdk_bWpl0g5Gg8iZbcIcIuXZBKrCXm6wbY8Bf3t8HYgkvtUxTFeSRi04H_d-nRpfKVNmO_xj2FfQ05UWBd7viNxoh7ZYqcmFu_kszh990N6hTDdF-Pm9lIO6Mz5eI44cvG6cAFUCsf32UWTG-xaf-Jw2kwt3ho501pEgh-I9nny6_xo4N-XCV_bMS9i4Ng7TsDCgsWrK34kZFoZXivATjPLBtjZ8FnIF1U7WvMolG6g6HFo-JsiPez7cuSYQpNqd9oVzlud-jQO9rbQTBN64B7fYaAWfIMC-KPHvwnDIwFfV-XXBUiA6zL5WwBBrP1da2OInD4Ik1cIqPMxQNYJdjNf79W5arUoOb80mwNfLAXZ7xvYb_FhXpXlHwqQxCr4T5Eb7UcwMy4JUzl6gxApg_qlE4bHrIC203gOPztVCmXuaWEifkbzOtV5QzgZI0Je0ayJCWB3rEB9uFeR3JGTJwy7hcTN3B2JZ3ZPM4RjJI6xt58u27S3rf_fr8XFwtIVCIcWvAnUsFRti5fF7Ou7uTwDk5XPXJzde0yMwb5NcbRD4gihqN_4NlaeYqveL-n2McVztcWDhfWpNthSb8OEtE0O1Qs=w522-h962-no" lightbox_small="https://lh3.googleusercontent.com/eSa-OlNsKXa8OOdk_bWpl0g5Gg8iZbcIcIuXZBKrCXm6wbY8Bf3t8HYgkvtUxTFeSRi04H_d-nRpfKVNmO_xj2FfQ05UWBd7viNxoh7ZYqcmFu_kszh990N6hTDdF-Pm9lIO6Mz5eI44cvG6cAFUCsf32UWTG-xaf-Jw2kwt3ho501pEgh-I9nny6_xo4N-XCV_bMS9i4Ng7TsDCgsWrK34kZFoZXivATjPLBtjZ8FnIF1U7WvMolG6g6HFo-JsiPez7cuSYQpNqd9oVzlud-jQO9rbQTBN64B7fYaAWfIMC-KPHvwnDIwFfV-XXBUiA6zL5WwBBrP1da2OInD4Ik1cIqPMxQNYJdjNf79W5arUoOb80mwNfLAXZ7xvYb_FhXpXlHwqQxCr4T5Eb7UcwMy4JUzl6gxApg_qlE4bHrIC203gOPztVCmXuaWEifkbzOtV5QzgZI0Je0ayJCWB3rEB9uFeR3JGTJwy7hcTN3B2JZ3ZPM4RjJI6xt58u27S3rf_fr8XFwtIVCIcWvAnUsFRti5fF7Ou7uTwDk5XPXJzde0yMwb5NcbRD4gihqN_4NlaeYqveL-n2McVztcWDhfWpNthSb8OEtE0O1Qs=w522-h962-no" lightbox_title="" lightbox_alt="" %}
+
+<!--<div class="videoWrapper"><iframe width="662" height="1030" src="https://invis.io/JXB34PX6R" frameborder="0" allowfullscreen>&nbsp;</iframe></div>-->

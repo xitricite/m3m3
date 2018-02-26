@@ -6,7 +6,7 @@ categories: portfolio
 tags:
   - Uni Project
 
-featured-img: https://res.cloudinary.com/xitricite/image/upload/ar\_2:1,c\_thumb,g\_auto/v1510629301/blended\_comp_v2.png
+featured-img: 'http://res.cloudinary.com/xitricite/image/upload/c_fill,g_north,h_600,w_910,x_0/v1510629301/blended_comp_v2.jpg'
 
 ---
 

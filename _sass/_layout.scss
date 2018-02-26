@@ -1,3 +1,7 @@
+:focus {
+    box-shadow: 0px 0px 20px $text-color;
+}
+
 /**
  * Site header
  */
@@ -290,6 +294,11 @@
     background-position: bottom right;
 }
 
+.shiv {
+    -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
+    box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
+}
+
 .darkBG {
     background-color: transparentize($text-color, 0.7);
     color: $side-color-light;
@@ -372,7 +381,7 @@
     &:visited, &:active {
         background: darken($brand-color,3);
     }
-    &:hover {
+    &:hover, &:focus {
         color: darken($side-color, 4);
         background: $side-color-light;
         border: 2px solid darken($side-color, 4);
@@ -526,17 +535,11 @@ a.plain {
     transition: $transition;
     border-radius: $border-radius;
 
-    &:hover {
+    &:hover, &:focus {
         text-decoration: none;
         color: lighten($brand-color, 2);
         background: transparentize($text-color, 0.2);
     }
-}
-
-a.post-cover:hover {
-    -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.2);
-    box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.2);
-    color: lighten($side-color, 2);
 }
 
 .post-cover {
@@ -549,27 +552,35 @@ a.post-cover:hover {
     background-color: #b6ebec;
     overflow: hidden;
     min-height: 40vh;
-    -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
-    box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
     -webkit-transition: $transition;
-    transition: $transition !important;
+    transition: $transition;
     border-radius: $border-radius;
     &>a {
         padding: 2rem 1rem;
         display: block;
+        position: absolute;
         box-sizing: border-box;
         height: 100%;
+        width: 100%;
+        opacity: 1;
+        transform: scale(1);
         color: lighten($brand-color, 2);
-        text-decoration: none; // transform: translateY(100%);
+        text-decoration: none;
+        -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
+        box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.4);
+        -webkit-transition: $transition;
+        transition: $transition;
+        &:hover, &:focus {
+        -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 1);
+        box-shadow: inset 0 0 0 9000px transparentize($text-color, 1);
+        color: lighten($side-color, 2);
+        opacity: 0;
+        transform: scale(1.2);
+        }
     }
     &>div {
         color: lighten($brand-color, 2);
         text-decoration: none; // transform: translateY(100%);
-    }
-    &>a:hover {
-        -webkit-box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.2);
-        box-shadow: inset 0 0 0 9000px transparentize($text-color, 0.2);
-        color: lighten($side-color, 2);
     }
 }
 
@@ -615,7 +626,7 @@ a.post-cover:hover {
         background: darken($side-color, 3);
         padding: 4px 18px;
         text-decoration: none;
-        &:hover {
+        &:hover, &:focus {
             color: $brand-color-dark;
             background: $brand-color;
         }

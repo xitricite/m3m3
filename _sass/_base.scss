@@ -75,7 +75,8 @@ html {
  */
 
 main img {
-  width: 100%;
+  min-width: 50%;
+  max-width: 100%;
   vertical-align: middle;
   border-radius: $border-radius;
 }
@@ -181,14 +182,21 @@ a {
  */
 
 blockquote {
-  color: $side-color;
+  color: $side-color-light;
+  background-color: transparentize($brand-color-dark, 0.6);
   border-left: 4px solid $side-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: 1.125em;
-  letter-spacing: -1px;
-  font-style: italic;
-  > :last-child {
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  font-size: $small-font-size;
+  quotes: "\201C""\201D""\2018""\2019";
+  >:last-child {
     margin-bottom: 0;
+  }
+  >:first-child:before {
+  content: open-quote;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-right: 0.25rem;
+  vertical-align: -0.4em;
   }
 }
 
