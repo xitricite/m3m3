@@ -11,7 +11,7 @@
           <span class="bars"></span>
         </label>
 
-        <div class="trigger">
+        <ul class="trigger">
           {% for path in page_paths %}
           {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
@@ -22,7 +22,8 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-        </div>
+          <a class="page-link" href="{{site.baseurl}}/#contact">Contact</a>
+        </ul>
       </nav>
     {% endif %}
   </div>

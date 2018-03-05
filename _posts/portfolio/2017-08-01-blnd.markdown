@@ -12,7 +12,7 @@ featured-img: 'http://res.cloudinary.com/xitricite/image/upload/c_fill,g_north,h
 
 A night celebrating the graduates of Digital Design 2017, also serves as a small networking event.
 
-Ongoing project with: Aleks (Planning), Mason (Planning, Video), Josh (Developer), Lia (Planning, Co-ordination). Supervised by Jarrad and Andrew.
+Project with: Aleks (Planning), Mason (Planning, Video), Josh (Developer), Lia (Planning, Co-ordination). Supervised by Jarrad and Andrew.
 
 
 <span class="fa-2x"><span class="fa fa-globe"></span> [site](http://blendedcurtin.com/)</span>

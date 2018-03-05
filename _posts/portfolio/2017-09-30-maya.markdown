@@ -15,7 +15,10 @@ embeded-url:
 
 A render of a room in Maya.
 
-##Experiments
+### Experiments
 <span class="fa fa-flask"></span>
-Have tried to use MASH in 2017 for 
+Tried to use MASH in 2017 for motion graphics purposes.
+
 <div style="width:100%;height:0px;position:relative;padding-bottom:91.667%;"><iframe src="https://streamable.com/s/nww3q/myhmcj" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+### Final Render

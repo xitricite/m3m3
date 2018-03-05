@@ -13,11 +13,11 @@ featured-img: 'https://lh3.googleusercontent.com/TcNlewtzkyLTOaYjs3Y8FoAGwiAKKVY
 
 ---
 
-Global Cinema Network - prototype app design, &amp; mockup branding.
+Global Cinema Network - prototype app design, &amp; mockup branding. Made with Illustrator, Photoshop, and Zeplin.
 
-**Tools**: Illustrator, Photoshop, Zeplin
+## Overview
 
-**Brief**
+**Purpose & Objective**:
 
 > A new startup would like to have an app. Their business allows people to find movies across all cinemas worldwide. Users can search for movies and find the movie they are looking for. They can watch a trailer of that movie and see where the movie is playing and even buy a ticket to one of those sessions. [...]
 >
@@ -30,13 +30,14 @@ Global Cinema Network - prototype app design, &amp; mockup branding.
 >
 > [Additional requirements: app bar at the bottom]
 
-&ndash; provided by Apps People Perth.
+&ndash; Brief provided by Apps People Perth.
 
-View:
+**Approach**
 
+Drew a diagram, then moved to Zeplin for 'production'
 [Flow diagram](https://www.draw.io/#G1LNINV-Y00JShjcT1Qas5DQEPL_u5fVp0){:.btn} [Zeplin project](https://zpl.io/V0ZydLm){:.btn}
 
 
-### Screens
+**Design**
 
 {% include lightbox.html lightbox_large="https://lh3.googleusercontent.com/TcNlewtzkyLTOaYjs3Y8FoAGwiAKKVY8OJL-5zYrwwEMSA_VZvHVI-S0N_qthTaO0UNsrbUmnIwAf1F8VVexiO3yaLPN9h98wXVFPz7Y1g50jbnwM-NATGLiB0QMln5j6EOeGiyv3Ltjl8Fbf8LIASA7WbuXVlDYpnb4N8zwhhmVAEL_ElD53Tjb0UszbeVE3pb-9Tc-LrtL5WMlatHL3JWi119rykWe-G9Wk9yAZ8PsRlLDSjnctOAWRdqJiUT7dB-onFVgtboVTrUNUsooEgSTe59SRAOu_l9ff60v8oBb4FBA5c0bf9hUN87znqOHi9ezZahh0X9fGdK-U35GGfVeuXQQyYnDt8nbM1sP570K1WIZSIC3IoOFveoDrEuA5GQu8e-Gfqc1drhzOkmbVJnEEiHNeHkiC81Z7WHUrYCS4Cxt0nYPOT7P_z7si9XEZ-ITGSk7z5pwLnAaKmpd61ouvvFXDgyKBMdE_d2uJDsPLEAv3-Vm-GeUhNyBurmZ-dDtSkEOzSE_vv-YyPf6tn810oP9HMTyTzsPS1LUoBP23AqWiYaELh-vVBIvDMRW5ZXS2JzqyymuPp4dI4pKzhFgDDTQM4p58lICRfg=w810-h960-no" lightbox_small="https://lh3.googleusercontent.com/TcNlewtzkyLTOaYjs3Y8FoAGwiAKKVY8OJL-5zYrwwEMSA_VZvHVI-S0N_qthTaO0UNsrbUmnIwAf1F8VVexiO3yaLPN9h98wXVFPz7Y1g50jbnwM-NATGLiB0QMln5j6EOeGiyv3Ltjl8Fbf8LIASA7WbuXVlDYpnb4N8zwhhmVAEL_ElD53Tjb0UszbeVE3pb-9Tc-LrtL5WMlatHL3JWi119rykWe-G9Wk9yAZ8PsRlLDSjnctOAWRdqJiUT7dB-onFVgtboVTrUNUsooEgSTe59SRAOu_l9ff60v8oBb4FBA5c0bf9hUN87znqOHi9ezZahh0X9fGdK-U35GGfVeuXQQyYnDt8nbM1sP570K1WIZSIC3IoOFveoDrEuA5GQu8e-Gfqc1drhzOkmbVJnEEiHNeHkiC81Z7WHUrYCS4Cxt0nYPOT7P_z7si9XEZ-ITGSk7z5pwLnAaKmpd61ouvvFXDgyKBMdE_d2uJDsPLEAv3-Vm-GeUhNyBurmZ-dDtSkEOzSE_vv-YyPf6tn810oP9HMTyTzsPS1LUoBP23AqWiYaELh-vVBIvDMRW5ZXS2JzqyymuPp4dI4pKzhFgDDTQM4p58lICRfg=w810-h960-no" lightbox_title="Global Cinema Network - prototype app design" lightbox_alt="Global Cinema Network - prototype app design" %}

@@ -4,7 +4,7 @@ title:  "Child Safety Foundation"
 date:   2017-11-02 09:00:00 +0800
 categories: portfolio
 tags:
-  - Uni Project
+  - User Experience
   - Unity
   - Augmented Reality
   - Group Project
@@ -33,15 +33,29 @@ image-caption:
 
 Road safety is more fun in augmented reality! Imagine a bus on fire..
 
-This was a group project with: Joyce (project manager), Shawn (lead Unity dev), Toby (unity dev), [William ](http://www.willhobbsdesigns.com/)(research, copywriter) and me (design, unity dev) supervised by [Artur](www.ambientmediaassociation.org). 
 
-### Intro Video
-Animated in Clip Studio Paint & After Effects
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ql8dUW_6VgE" frameborder="0" allowfullscreen></iframe>
+## Overview
 
-### Unity Demo App
-To be added...
+**Purpose & Objective**: A child road safety application prototype to be utilised at a [physical location](https://www.cccsf.org.au/safety-school/) in Perth. While a class of year 1-7 students is supervised by a teacher the app quizzes children on the appropriate actions for some road safety scenarios.
 
-**Screenshots**
+**Approach**: This was a group project with: Joyce (project manager), Shawn (lead Unity dev), Toby (unity dev), [William ](http://www.willhobbsdesigns.com/)(research, copywriter) and me (design, unity dev). Supervised by [Artur](www.ambientmediaassociation.org).
+
+**Project duration**: 2/3rds of a semester, about 8 weeks, SCRUM sprint weekly meetings between members, two meetings between stakeholders
+
+**[View the publication online](http://www.ambientmediaassociation.org/Journal/index.php/series/article/view/284){:.btn}**
+
+
+### UX Process
+
+**Research**: [Written by Will](https://docs.google.com/document/d/1wI18boq7B2tqQnxF_M_Ne5USq41xyAYHjJ2WmYSofco/edit?usp=sharing)
+
+**Ideation, Wireframe & Design**
+A flow diagram was first created to layout the exact scenario. Then the application's UI was prototyped in Unity by me, AR functionality by Shawn. 
 
 {% include lightbox.html lightbox_large="https://lh3.googleusercontent.com/Lv1JOByr_WEMEzMvs0CPugcRoLkTQV-5UTkJ1cOQVnZuJw6NJWfJgw5LRpAm21ekViklCs7uYTYa5fRHshm2v5ezOuC6nL_w2SkDkFAf9b00CEHzi7WzE8N81YV7FUd97NwTvUHz3jpuTp5MW53RKLey2l_1EKSFZWEIVMEy0pNAyFQgbnNcHZqSYoAtPPED4jeNiDSuSi06ZOAl57bHEKpVsQoAXWrM5zbVIBDgW7sEyWqnqNvCQ8yvH5j0C8oqUeADNK8E1NPWTWrX22gyGRqOXY8uRutJ8GVVwf5zKZ0JmaekT-6TonnkFeIBM5bkBI_dU4I384lTbevuPlLON7UsajJ4mShkPbzModHqYzuBzkr9_lU-9OUn7TXoE0RCQI_Q5SIyAz9x7DqySLXcuQvK6TjCRIUbb3pvOkKG76fppdhJ1QTRiKpPin4wraAV6dwRJ-mSmauyri-N4NCY04phmXmRzp9dEl5BYFFg_AxcVsIQ3F_8jShQvEKmryLXe6pdWZaUaZ5Th2GxmrF8_eeK5j8mZ5QhdnKFsVH6NGWZNowR6M5jIvN3njadeSAsHtxz3E4cokpNcH9zEu0ILfPNLQssafh9B3tW1bk=w1084-h960-no" lightbox_small="https://lh3.googleusercontent.com/Lv1JOByr_WEMEzMvs0CPugcRoLkTQV-5UTkJ1cOQVnZuJw6NJWfJgw5LRpAm21ekViklCs7uYTYa5fRHshm2v5ezOuC6nL_w2SkDkFAf9b00CEHzi7WzE8N81YV7FUd97NwTvUHz3jpuTp5MW53RKLey2l_1EKSFZWEIVMEy0pNAyFQgbnNcHZqSYoAtPPED4jeNiDSuSi06ZOAl57bHEKpVsQoAXWrM5zbVIBDgW7sEyWqnqNvCQ8yvH5j0C8oqUeADNK8E1NPWTWrX22gyGRqOXY8uRutJ8GVVwf5zKZ0JmaekT-6TonnkFeIBM5bkBI_dU4I384lTbevuPlLON7UsajJ4mShkPbzModHqYzuBzkr9_lU-9OUn7TXoE0RCQI_Q5SIyAz9x7DqySLXcuQvK6TjCRIUbb3pvOkKG76fppdhJ1QTRiKpPin4wraAV6dwRJ-mSmauyri-N4NCY04phmXmRzp9dEl5BYFFg_AxcVsIQ3F_8jShQvEKmryLXe6pdWZaUaZ5Th2GxmrF8_eeK5j8mZ5QhdnKFsVH6NGWZNowR6M5jIvN3njadeSAsHtxz3E4cokpNcH9zEu0ILfPNLQssafh9B3tW1bk=w1084-h960-no" lightbox_title="Unity demo UI screenshots" lightbox_alt="Unity demo UI screenshots"  %}
+
+### Intro Video
+Animated by me in Clip Studio Paint & After Effects
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ql8dUW_6VgE" frameborder="0" allowfullscreen></iframe>
+
+**Screenshots**
