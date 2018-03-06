@@ -129,6 +129,7 @@
         input~.trigger {
             clear: both;
             display: none;
+            margin: 0;
             opacity: 0;
             -webkit-transition: $transition;
             -o-transition: $transition;
@@ -570,6 +571,13 @@
             -webkit-box-shadow: 4px 4px 18px $text-color;
             box-shadow: 4px 4px 18px $text-color;
         }
+    }
+}
+
+@media (max-width: 400px;){
+    .g-recaptcha{
+        transform: scale(.65);
+        transform-origin: left;
     }
 }
 
