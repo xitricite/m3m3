@@ -8,7 +8,7 @@ tags:
   - Web Design
   - Graphic Design
 
-featured-img: https://s26.postimg.org/urp3o96gp/cow.jpg
+featured-img: info_vis/cow_c.jpg
 ---
 
 Interactive web layout of an infographic about nutrition, for a unit in Visualisation Technologies.

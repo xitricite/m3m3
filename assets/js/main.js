@@ -20,5 +20,5 @@
 			clickable: true,
 		},
 	});
-
+	
 })();
